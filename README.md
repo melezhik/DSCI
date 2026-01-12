@@ -158,3 +158,13 @@ TDB - example of how to write job plugins (pretty much as any job task)
 Jobs are executed on either ephemeral containers on directly on VM
 
 
+# Running pipelines locally
+
+Just install dsci cli as docker container and then:
+
+```bash
+#!/bin/bash
+docker run dsci job_one 
+docker run dsci job_two
+docker run dsci job_one task_two foo="foo_value"  bar="bar value"
+```
