@@ -160,7 +160,7 @@ Jobs are executed on either ephemeral containers on directly on VM
 
 # Running pipelines locally
 
-Just install dsci cli as docker container and then:
+Just use dsci cli container image and then:
 
 ```bash
 #!/bin/bash
