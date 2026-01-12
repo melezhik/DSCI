@@ -168,3 +168,10 @@ docker run dsci job_one
 docker run dsci job_two
 docker run dsci job_one task_two foo="foo_value"  bar="bar value"
 ```
+
+# Example project
+
+It's kind boilerplate, but you can see the main idea
+
+[examples/project](https://github.com/melezhik/DSCI/tree/main/examples/project)
+
