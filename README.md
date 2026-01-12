@@ -30,21 +30,22 @@ In your source code repository just drop few tasks:
 ```
 .
 ├── job_one
-│   ├── task.py
+│   ├── job.py
 │   └── tasks
 │       ├── task_one
 │       │   └── task.py
 │       └── task_two
 │           └── task.bash
-└── job_two
-    ├── task.bash
-    └── tasks
-        └── task_one
-            └── task.bash
+├── job_two
+│   ├── job.bash
+│   └── tasks
+│       └── task_one
+│           └── task.bash
+└── jobs.yaml
 ```
 
 
-*job_one/task.py*
+*job_one/job.py*
 
 ```python
 #!/bin/python3
@@ -76,6 +77,13 @@ print(task_var("bar"))
 #!/bin/bash
 
 echo "hello from task one you passed: ${foo}|${bar}"
+```
+
+*job_one/job.bash*
+
+```bash
+#!/bin/bash
+run_task "task_one"
 ```
 
 *jobs.yaml*
