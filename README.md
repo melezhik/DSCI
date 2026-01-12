@@ -130,7 +130,7 @@ The same SDK for those programming languages:
 * Raku
 * Perl5
 
-Choose the one you like an use for pipeline. Now extra code is required!
+Choose the one you like and use it for pipeline. No extra code is required!
 
 TBD - pipeline examples
 
