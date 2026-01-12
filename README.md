@@ -33,7 +33,7 @@ In your source code repository just drop few tasks:
 │   ├── task.py
 │   └── tasks
 │       ├── task_one
-│       │   └── task.bash
+│       │   └── task.py
 │       └── task_two
 │           └── task.bash
 └── job_two
@@ -63,8 +63,14 @@ run_task(
 );
 ```
 
+*job_one/tasks/task_one/task.py*
 
-*job_one/task_one/task.bash*
+```python
+print(task_var("foo"))
+print(task_var("bar"))
+```
+
+*job_one/tasks/task_two/task.bash*
 
 ```bash
 #!/bin/bash
