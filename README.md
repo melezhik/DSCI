@@ -75,6 +75,7 @@ echo "hello from task one you passed: ${foo}|${bar}"
 *jobs.yaml*
 
 ```yaml
+# runs job_one, job_two sequentially
 jobs:
   - job_one
   - job_two
@@ -128,6 +129,27 @@ TBD
 
 TBD
 
+# Using job plugins
 
+There are a plenty of job plugins for common tasks:
+
+- installing database, services, etc
+
+For example:
+
+*jobs.yaml*
+
+```
+jobs:
+  # install mysql database
+  - job_plugin "mysql" 
+  - job_one
+  - job_two
+```
+
+
+# Containers support
+
+Jobs are executed on either ephemeral containers on directly on VM
 
 
