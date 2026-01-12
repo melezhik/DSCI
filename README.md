@@ -121,7 +121,8 @@ Choose the one you like an use for pipeline. Now extra code is required!
 
 # Forgejo integration
 
-Use DSCI instead of YAML pipeline within your forgejo instance.
+Use DSCI instead of YAML pipeline within your forgejo instance. Pipeline reports
+are available directly via forgejo
 
 TBD
 
