@@ -83,7 +83,7 @@ jobs:
 
 ## Passing states between tasks/jobs
 
-Within any tasks/* task:
+Just use update\_state/get\_state functions within any tasks/* task:
 
 ```python
 #!/usr/python3
@@ -108,27 +108,28 @@ print(dict["out1"])
 
 The same SDK for those programming languages:
 
+* Bash
+* Python
+* Golang
+* Ruby
+* Powershell
 * Raku
 * Perl5
-* Ruby
-* Python
-* Bash
-* Powershell
-* Golang
 
 Choose the one you like an use for pipeline. Now extra code is required!
 
+TBD - pipeline examples
 
 # Forgejo integration
 
 Use DSCI instead of YAML pipeline within your forgejo instance. Pipeline reports
 are available directly via forgejo
 
-TBD
+TBD - installation/configuration howto
 
 # Codeberg integration
 
-TBD
+TBD - installation/configuration howto
 
 # Using job plugins
 
@@ -148,6 +149,9 @@ jobs:
   - job_two
 ```
 
+Jon plugins acts as native jobs, for example can use get\_state/update\_state function.
+
+TDB - example of how to write job plugins (pretty much as any job task)
 
 # Containers support
 
