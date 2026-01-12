@@ -1,4 +1,0 @@
-#!raku
-
-bash "git status";
-
