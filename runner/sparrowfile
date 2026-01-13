@@ -36,15 +36,16 @@ does Sparky::JobApi::Role
       );
 
       my %tags = (
-        job => $job,
-        stage => "job-run",
+        job_id  => $job<id>,
+        path    => $job<path>,
+        stage   => "job-run",
       );
 
       # TBD - pass results from previous jobs
       # via job stash
 
       $j.queue({
-        :description($job), 
+        :description($job<id>), 
         :tags(%tags),
       });
 
@@ -61,6 +62,9 @@ does Sparky::JobApi::Role
 
     #say tags().raku;
 
+    say "run job: {tags()<job_id>}";
+    say "===";
+
     directory "scm";
 
     git-scm "http://127.0.0.1:3000/root/test.git", %(
@@ -68,18 +72,18 @@ does Sparky::JobApi::Role
       :branch<main>,
     );
 
-    for "scm/.dsci/{tags()<job>}".IO.dir: test => /^^ "job." \S+ $$/ -> $file {
+    for "scm/.dsci/{tags()<path>}".IO.dir: test => /^^ "job." \S+ $$/ -> $file {
       $file.basename ~~ /^^ "job." (\S+) $$/;
       my $ext = "$0";
       say "cp {$file.basename} hook.{$ext} ...";
-      copy "scm/.dsci/{tags()<job>}/{$file.basename}",
-           "scm/.dsci/{tags()<job>}/hook.{$ext}";
+      copy "scm/.dsci/{tags()<path>}/{$file.basename}",
+           "scm/.dsci/{tags()<path>}/hook.{$ext}";
 
-      bash q:to /BASH/, %( cwd => "scm/.dsci/{tags()<job>}", description => "patch python files" );
+      bash q:to /BASH/, %( cwd => "scm/.dsci/{tags()<path>}", description => "patch python files" );
         find . -type f -name task.py  | raku -e  'for lines() -> $i { my $c = $i.IO.slurp; $c = "from sparrow6lib import *\n\n$c"; $i.IO.spurt($c) }' 
         find . -type f -name hook.py  | raku -e  'for lines() -> $i { my $c = $i.IO.slurp; $c = "from sparrow6lib import *\n\n$c"; $i.IO.spurt($c) }' 
       BASH
-      my $s = task-run "scm/.dsci/{tags()<job>}";
+      my $s = task-run "scm/.dsci/{tags()<path>}";
     }
   }
 

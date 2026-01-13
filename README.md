@@ -89,10 +89,14 @@ run_task "task_one"
 *jobs.yaml*
 
 ```yaml
-# runs job_one, job_two sequentially
+# runs job1, job2 sequentially
 jobs:
-  - job_one
-  - job_two
+  - 
+    id: job1
+    path: job_one/
+  - 
+    id: job2
+    path: job_two/
 ```
 
 ## Passing states between tasks/jobs
