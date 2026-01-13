@@ -74,11 +74,11 @@ does Sparky::JobApi::Role
       say "cp {$file.basename} hook.{$ext} ...";
       copy "scm/.dsci/{tags()<job>}/{$file.basename}",
            "scm/.dsci/{tags()<job>}/hook.{$ext}";
-      if $ext eq "py" {
-        my $c = "scm/.dsci/{tags()<job>}/hook.{$ext}".IO.slurp;
-        $c = "from sparrow6lib import *\n\n$c";
-        "scm/.dsci/{tags()<job>}/hook.{$ext}".IO.spurt($c);
-      }
+
+      bash q:to /BASH/, %( cwd => "scm/.dsci/{tags()<job>}", description => "patch python files" );
+        find . -type f -name task.py  | raku -e  'for lines() -> $i { my $c = $i.IO.slurp; $c = "from sparrow6lib import *\n\n$c"; $i.IO.spurt($c) }' 
+        find . -type f -name hook.py  | raku -e  'for lines() -> $i { my $c = $i.IO.slurp; $c = "from sparrow6lib import *\n\n$c"; $i.IO.spurt($c) }' 
+      BASH
       my $s = task-run "scm/.dsci/{tags()<job>}";
     }
   }
