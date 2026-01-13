@@ -1,0 +1,79 @@
+#!raku
+
+my $scm = "http://127.0.0.1:3000/root/test.git";
+
+use Sparky::JobApi;
+
+use JSON::Fast;
+
+use URI::Encode;
+
+use YAMLish;
+
+class Pipeline
+
+does Sparky::JobApi::Role
+
+{
+
+  method stage-main {
+
+    directory "scm";
+
+    git-scm "http://127.0.0.1:3000/root/test.git", %(
+      :to<scm>,
+      :branch<main>,
+    );
+
+    my $jobs = load-yaml("scm/.dsci/jobs.yaml".IO.slurp);
+
+    #say $jobs.raku;
+
+    for $jobs<jobs>.flat -> $job {
+
+      my $j = Sparky::JobApi.new(
+        :project("job.run"),
+      );
+
+      my %tags = (
+        job => $job,
+        stage => "job-run",
+      );
+
+      # TBD - pass results from previous jobs
+      # via job stash
+
+      $j.queue({
+        :description($job), 
+        :tags(%tags),
+      });
+
+      my $st = self.wait-job($j);
+
+      die unless $st<OK>;
+
+      say $j.report();
+      
+    }
+  }
+
+  method stage-job-run {
+
+    say tags().raku;
+
+    
+    directory "scm";
+
+    git-scm "http://127.0.0.1:3000/root/test.git", %(
+      :to<scm>,
+      :branch<main>,
+    );
+
+    for "scm/.dsci/{tags()<job>}".IO.dir: test => /^^ "job." \S+ $$/ -> $file {
+      say $file;
+    }
+  }
+
+}
+
+Pipeline.new.run;
