@@ -159,12 +159,19 @@ For example:
 
 *jobs.yaml*
 
-```
+```yaml
 jobs:
-  # install mysql database
-  - job_plugin "mysql" 
-  - job_one
-  - job_two
+  - 
+    # install mysql database
+    id: mysql
+    plugin: mysql
+  - 
+    id: job1
+    path: job_one/
+   - 
+    id: job2
+    path: job_two/
+  - 
 ```
 
 Jon plugins acts as native jobs, for example can use get\_state/update\_state function.
