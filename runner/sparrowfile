@@ -1,3 +1,5 @@
+#!raku
+
 my $scm = "http://127.0.0.1:3000/root/test.git";
 
 use Sparky::JobApi;
@@ -57,9 +59,8 @@ does Sparky::JobApi::Role
 
   method stage-job-run {
 
-    say tags().raku;
+    #say tags().raku;
 
-    
     directory "scm";
 
     git-scm "http://127.0.0.1:3000/root/test.git", %(
@@ -68,7 +69,12 @@ does Sparky::JobApi::Role
     );
 
     for "scm/.dsci/{tags()<job>}".IO.dir: test => /^^ "job." \S+ $$/ -> $file {
-      say $file;
+      $file.basename ~~ /^^ "job." (\S+) $$/;
+      my $ext = "$0";
+      say "cp {$file.basename} hook.{$ext} ...";
+      copy "scm/.dsci/{tags()<job>}/{$file.basename}",
+           "scm/.dsci/{tags()<job>}/hook.{$ext}";
+      my $s = task-run "scm/.dsci/{tags()<job>}";
     }
   }
 
