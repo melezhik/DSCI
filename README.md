@@ -99,9 +99,9 @@ jobs:
     path: job_two/
 ```
 
-## Passing states between tasks/jobs
+## Passing states between tasks
 
-Just use update\_state/get\_state functions within any tasks/* task:
+Just use update\_state function within any tasks/* task to set some data:
 
 ```python
 #!/usr/python3
@@ -112,7 +112,7 @@ update_state({
 })
 ```
 
-Then pick it up within any other tasks/* task
+Then pick it up within any other tasks/* task by using get\_state function
 
 ```python
 #!/bin/python
@@ -120,6 +120,31 @@ Then pick it up within any other tasks/* task
 dict = get_state()
 print(dict["out1"])
 
+```
+
+## Passing states between jobs
+
+Just use update\_state function within any tasks/* task to set some data.
+
+For example within job1, task_one:
+
+```python
+#!/usr/python3
+
+update_state({
+  'out1' : 'out1 value',
+  'out2' : 'out2 value'
+})
+```
+
+Then pick it up within any other jobs tasks/* task by using config function
+
+```python
+#!/bin/python
+
+dict = config()
+
+print(dict["_dsci_"]["job1"]["out1"])
 ```
 
 # Programming languages supported
