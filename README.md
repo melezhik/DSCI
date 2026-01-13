@@ -207,7 +207,6 @@ TDB - example of how to write job plugins (pretty much as any job task)
 
 Jobs are executed on either ephemeral containers on directly on VM
 
-
 # Running pipelines locally
 
 Just use dsci cli container image and then:
@@ -218,6 +217,21 @@ docker run dsci job_one
 docker run dsci job_two
 docker run dsci job_one task_two foo="foo_value"  bar="bar value"
 ```
+# Pipelines vs Jobs vs Tasks
+
+- Pipeline is a list of jobs executed sequentially
+
+- Job is a list of tasks executed sequentially
+
+- Isolation:
+
+Jobs are executed on isolated environments, while tasks within a jobs are executed
+in the same enviorment
+
+- Environments could be either containers or virtual machines
+
+- Jobs/tasks can share/pass states
+
 
 # Example project
 
