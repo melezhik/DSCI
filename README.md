@@ -205,7 +205,7 @@ TDB - example of how to write job plugi (pretty much as any job)
 
 # Containers support
 
-Jobs are executed on either ephemeral containers on directly on VM
+Jobs are executed either on ephemeral containers or directly on VM
 
 # Running pipelines locally
 
