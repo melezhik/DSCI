@@ -1,5 +1,3 @@
-#!raku
-
 my $scm = "http://127.0.0.1:3000/root/test.git";
 
 use Sparky::JobApi;
