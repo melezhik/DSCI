@@ -232,6 +232,9 @@ in the same enviorment
 
 - Jobs/tasks can share/pass states
 
+# Screenshots
+
+![UI](screenshots/ui.jpeg)
 
 # Example project
 
