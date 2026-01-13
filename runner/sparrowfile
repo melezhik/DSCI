@@ -74,6 +74,11 @@ does Sparky::JobApi::Role
       say "cp {$file.basename} hook.{$ext} ...";
       copy "scm/.dsci/{tags()<job>}/{$file.basename}",
            "scm/.dsci/{tags()<job>}/hook.{$ext}";
+      if $ext eq "py" {
+        my $c = "scm/.dsci/{tags()<job>}/hook.{$ext}".IO.slurp;
+        $c = "from sparrow6lib import *\n\n$c";
+        "scm/.dsci/{tags()<job>}/hook.{$ext}".IO.spurt($c);
+      }
       my $s = task-run "scm/.dsci/{tags()<job>}";
     }
   }
