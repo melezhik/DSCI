@@ -225,7 +225,7 @@ docker run dsci job_one task_two foo="foo_value"  bar="bar value"
 
 - Isolation:
 
-Jobs are executed on isolated environments, while tasks within a jobs are executed
+Jobs are executed on isolated environments, while tasks within a certain job are executed
 in the same enviorment
 
 - Environments could be either containers or virtual machines
