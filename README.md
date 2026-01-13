@@ -199,9 +199,9 @@ jobs:
   - 
 ```
 
-Jon plugins acts as native jobs, for example can use get\_state/update\_state function.
+Job plugins act as native jobs, for example can use get\_state/update\_state function.
 
-TDB - example of how to write job plugins (pretty much as any job task)
+TDB - example of how to write job plugi (pretty much as any job)
 
 # Containers support
 
