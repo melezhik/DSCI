@@ -51,14 +51,14 @@ In your source code repository just drop few tasks:
 #!/bin/python3
 run_task(
   'task_one', {
-      'foo' : 'foo value'
+      'foo' : 'foo value',
       'bar' : 'bar value'
     }
 );
 
 run_task(
   'task_two', {
-      'foo' : 'foo value'
+      'foo' : 'foo value',
       'bar' : 'bar value'
     }
 );
@@ -102,10 +102,10 @@ Just use update\_state/get\_state functions within any tasks/* task:
 ```python
 #!/usr/python3
 
-update_state, {
-  'out1' : 'out1 value'
+update_state({
+  'out1' : 'out1 value',
   'out2' : 'out2 value'
-}
+})
 ```
 
 Then pick it up within any other tasks/* task
