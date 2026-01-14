@@ -201,7 +201,7 @@ jobs:
 
 Job plugins act as native jobs, for example can use get\_state/update\_state function.
 
-TDB - example of how to write job plugi (pretty much as any job)
+TDB - example of how to write job plugin (pretty much as any job)
 
 # Containers support
 
@@ -234,11 +234,16 @@ in the same enviorment
 
 # Screenshots
 
+* DSCI reports
+
 ![UI](screenshots/ui.jpeg)
+
+* Forgejo commit status via DSCI
+
+![Commit check](screenshots/commit-check.jpeg)
 
 # Example project
 
 It's kind boilerplate, but you can see the main idea
 
 [examples/project](https://github.com/melezhik/DSCI/tree/main/examples/project)
-
