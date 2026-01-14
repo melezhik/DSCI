@@ -2,6 +2,9 @@
 
 [D]ead [S]imple CI
 
+---
+
+We are on discord, [join](https://discord.gg/KSMRTZ9F) us!
 
 # Feature
 
