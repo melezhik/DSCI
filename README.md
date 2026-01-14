@@ -25,7 +25,7 @@ and used as is
 
 # Show me the code
 
-In your source code repository just drop few tasks:
+In your source code repository just drop few tasks under `.dsci` directory:
 
 ```
 .
