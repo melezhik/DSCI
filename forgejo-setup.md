@@ -36,7 +36,7 @@ On the same host where forgejo instance runs:
 
 ```
 docker run \
---port 3000:3000,4000:4000 \
+-p 3000:3000 -p 4000:4000 \
 --env FORGEJO_HOST=http://127.0.0.1:3000 \
 --env FORGEJO_API_TOKEN=token \
 dsci
