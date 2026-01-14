@@ -43,20 +43,24 @@ dsci
 ```
 
 On the command above one needs to change FORGEJO_HOST to actual value related to the
-running forgejo instance. FORGEJO_API_TOKEN needs to be generated before hand:
+running forgejo instance. 
+
+FORGEJO_API_TOKEN needs to be generated before hand:
 
 ```
 user settings -> applications -> manage accrss tokens -> generate token
 ```
 
-and inserted into the docker run command input parameters. Permissions for access token needs to be set at least with "reposiory" permissions
+and inserted into the docker run command parameters. Permissions for access token needs to be set at least with "reposiory" permissions
 
 Once dsci container has run, copy the 
 content of it's public ssh key from output and save it, you will need it on the next step
 
-Attention! Please make it sure that dsci container is accessible from within your gorgejo instance by http://127.0.0.1:3000 address and dsci web ui is available public by 4000 port.
+**Attention!** Please make it sure that dsci container is accessible from within your forgejo instance by http://127.0.0.1:3000 address and dsci web ui is available for public by 4000 port.
 
 # set dsci ssh public key
+
+go to forgejo ui
 
 ```
 user settings -> ssh keys -> add key -> content of public ssh key taken from previous step
