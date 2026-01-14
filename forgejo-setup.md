@@ -27,3 +27,36 @@ restart forgejo
 ```bash
 brew services restart forgejo
 ```
+
+# run dsci runner
+
+On the same host where forgejo instance runs:
+
+```
+docker run \
+--env FORGEJO_HOST=http://127.0.0.1:3000 \
+--env FORGEJO_API_TOKEN=token \
+dsci
+```
+
+On the command above one needs to change FORGEJO_HOST to actual value related to the
+running forgejo instance. FORGEJO_API_TOKEN needs to be generated before hand:
+
+```
+user settings -> applications -> manage accrss tokens -> generate token
+```
+
+and inserted into the docker run command input parameters. Permissions for access token needs to be set at least with "reposiory" permissions
+
+Once dsci container has run, copy the 
+content of it's public ssh key from output and save it, you will need it on the next step
+
+# set dsci ssh public key
+
+```
+user settings -> ssh keys -> add key -> content of public ssh key taken from previous step
+```
+
+
+
+
