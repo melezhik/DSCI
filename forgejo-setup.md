@@ -48,10 +48,10 @@ running forgejo instance.
 FORGEJO_API_TOKEN needs to be generated before hand:
 
 ```
-user settings -> applications -> manage accrss tokens -> generate token
+user settings -> applications -> manage access tokens -> generate token
 ```
 
-and inserted into the docker run command parameters. Permissions for access token needs to be set at least with "reposiory" permissions
+and inserted into the docker run command parameters. Permissions for access token needs to be set at least with "repository" permissions
 
 Once dsci container has run, copy the 
 content of it's public ssh key from output and save it, you will need it on the next step
@@ -72,6 +72,6 @@ go to created repo and create pipeline code under `.dsci` directory, see instruc
 
 ---
 
-Happy hacking with fogejo and dsci! 😄
+Happy hacking with forgejo and dsci! 😄
 
 
