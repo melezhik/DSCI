@@ -12,7 +12,7 @@ We are on discord, [join](https://discord.gg/KSMRTZ9F) us!
 
 * no painful YAML pipelines, use general purpose programming languages for your pipelines instead
 
-* fully integrated with big guns like Forgejo/Codeberg
+* fully integrated with big guns like Forgejo/Codeberg/Gitea/Gitlab/Github
 
 * repeatable steps are written as plugins on general purpose programming languages 
 and used as is
@@ -171,7 +171,7 @@ TBD - pipeline examples
 Use DSCI instead of YAML pipeline within your forgejo instance. Pipeline reports
 are available directly via forgejo. See [instruction](https://github.com/melezhik/DSCI/blob/main/forgejo-setup.md)
 
-# Codeberg integration
+# Codeberg/Gitea/Gitlab/Github integration
 
 TBD - installation/configuration howto
 
