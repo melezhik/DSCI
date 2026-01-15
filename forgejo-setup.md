@@ -11,7 +11,7 @@ go to forgejo ui and create some repo
 # set web hook for repo
 
 ```
-repo -> settings -> web hooks -> http://127.0.0.1:3000
+repo -> settings -> web hooks -> http://127.0.0.1:3333/hook
 ```
 
 # set webhook allowed host
@@ -36,7 +36,7 @@ On the same host where forgejo instance runs:
 
 ```
 docker run \
--p 3000:3000 -p 4000:4000 \
+-p 3333:3333 -p 4000:4000 \
 --env FORGEJO_HOST=http://127.0.0.1:3000 \
 --env FORGEJO_API_TOKEN=token \
 dsci
@@ -56,7 +56,7 @@ and inserted into the docker run command parameters. Permissions for access toke
 Once dsci container has run, copy the 
 content of it's public ssh key from output and save it, you will need it on the next step
 
-**Attention!** Please make it sure that dsci container is accessible from within your forgejo instance by http://127.0.0.1:3000 address and dsci web ui is available for public by 4000 port.
+**Attention!** Please make it sure that dsci container is accessible from within your forgejo instance by http://127.0.0.1:3333 address and dsci web ui is available for public by 4000 port.
 
 # set dsci ssh public key
 
