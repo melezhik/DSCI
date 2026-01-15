@@ -169,9 +169,7 @@ TBD - pipeline examples
 # Forgejo integration
 
 Use DSCI instead of YAML pipeline within your forgejo instance. Pipeline reports
-are available directly via forgejo
-
-TBD - installation/configuration howto
+are available directly via forgejo. See [instruction]((https://github.com/melezhik/DSCI/blob/main/forgejo-setup.md)
 
 # Codeberg integration
 

@@ -30,11 +30,19 @@ restart forgejo
 brew services restart forgejo
 ```
 
+# build dsci runner
+
+```bash
+git clone https://github.com/melezhik/dsci-runner.git
+cd dsci-runner
+docker build . -t dsci
+```
+
 # run dsci runner
 
 On the same host where forgejo instance runs:
 
-```
+```bash
 docker run \
 -p 4000:4000 \
 --memory="4g" \
