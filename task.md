@@ -50,6 +50,21 @@ Task variable is handled inside tasks by calling `task_var()` function
 foo = task_var("foo")
 ```
 
+`run_task` function signatures for supported languages:
+
+```
++------------+----------------------------------------------+
+| Language   | Signature                                    |
++------------+----------------------------------------------+
+| Raku       | run_task(String,HASH)                        |
+| Perl       | run_task(SCALAR,HASHREF)                     |
+| Bash       | run_task TASK_NANE NAME VAL NAME2 VAL2       |
+| Python     | run_task(STRING,DICT)                        |
+| Ruby       | run_task(STRING,HASH)                        |
+| Powershell | run_task(STRING,HASH)                        |
++------------+----------------------------------------------+
+```
+
 ## Job parameters
 
 Tasks may also get an access to job input parameters by using `config()` function, say job has a parameter named `param1` then task may access the parameter like this:
