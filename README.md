@@ -245,6 +245,6 @@ in the same enviorment
 
 ![Commit check](screenshots/commit-check.jpeg)
 
-# Example project
+# Examples
 
 See [examples](https://github.com/melezhik/DSCI/tree/main/examples) folder
