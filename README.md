@@ -218,7 +218,7 @@ docker run dsci job_one
 docker run dsci job_two
 docker run dsci job_one task_two foo="foo_value"  bar="bar value"
 ```
-# Pipelines vs Jobs vs Tasks
+# Pipelines vs Jobs vs Tasks vs Plugins
 
 - Pipeline is a list of jobs executed sequentially
 
@@ -232,6 +232,8 @@ in the same enviorment
 - Environments could be either containers or virtual machines
 
 - Jobs/tasks can share/pass states
+
+- Plugins are the same as jobs, but reusable jobs published to https://sparrowhub.io
 
 # Screenshots
 
