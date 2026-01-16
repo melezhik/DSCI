@@ -35,7 +35,7 @@ Tasks are called from [job file](https://github.com/melezhik/DSCI/tree/main/job.
 ```python
 #!/bin/python3
 run_task("task_one"); # will run task inside tasks/task_one/ folder
-run_task("task_two"); # will run task inside tasks/task_one/ folder
+run_task("task_two"); # will run task inside tasks/task_two/ folder
 ```
 
 Tasks may take some input variables by passing the second argument to `run_task()`function:
