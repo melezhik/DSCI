@@ -67,8 +67,13 @@ foo = task_var("foo")
 
 ## Job parameters
 
-Tasks may also get an access to job input parameters by using `config()` function, say job has a parameter named `param1` then task may access the parameter like this:
+Tasks may also get an access to job input parameters by using `config()` function, say job has a parameter named `param1`:
 
+```yaml
+param1: value1
+```
+
+then task may access the parameter like this:
 
 Python example:
 
