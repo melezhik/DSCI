@@ -33,8 +33,9 @@ Following is a list of tasks file names for different languages:
 Tasks are called from [job file](https://github.com/melezhik/DSCI/tree/main/job.md) using `run_task()` function, it takes the first input parameter as a path to sub directory within `tasks/` directory:
 
 ```python
-run_task("task_one");
-run_task("task_two");
+#!/bin/python3
+run_task("task_one"); # will run task inside tasks/task_one/ folder
+run_task("task_two"); # will run task inside tasks/task_one/ folder
 ```
 
 Tasks may take some input variables by passing the second argument to `run_task()`function:
