@@ -36,7 +36,7 @@ Following is a list of job file names for different languages:
 +------------+--------------+
 ```
 
-Usually job is just a sequence of running [tasks](/doc/task), but maybe any code:
+Usually job is just a sequence of running [~tasks](/doc/task), but maybe any code:
 
 *job_one/job.python*
 
@@ -131,6 +131,6 @@ Job default parameters might be overridden by job parameters inside pipeline
 
 # Further reading 
 
-* [Pipelines](/doc/pipeline)
+* [~Pipelines](/doc/pipeline)
 
-* [Tasks](/doc/task)
+* [~Tasks](/doc/task)

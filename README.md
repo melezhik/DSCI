@@ -4,7 +4,7 @@
 
 ---
 
-We are on discord, [join](https://discord.gg/KSMRTZ9F) us!
+We are on discord, [~join](https://discord.gg/KSMRTZ9F) us!
 
 # Feature
 
@@ -219,13 +219,13 @@ docker run dsci job_one task_two foo="foo_value"  bar="bar value"
 ```
 # Pipelines vs Jobs vs Tasks vs Plugins
 
-- [Pipeline](/doc/pipeline) is a list of jobs executed sequentially
+- [~Pipeline](/doc/pipeline) is a list of jobs executed sequentially
 
-- [Job](/doc/job) is a list of tasks executed sequentially
+- [~Job](/doc/job) is a list of tasks executed sequentially
 
 - Isolation:
 
-Jobs are executed on isolated environments, while [tasks](/doc/task) within a certain job are executed in the same enviorment
+Jobs are executed on isolated environments, while [~tasks](/doc/task) within a certain job are executed in the same enviorment
 
 - Environments could be either containers or virtual machines
 
@@ -245,4 +245,4 @@ Jobs are executed on isolated environments, while [tasks](/doc/task) within a ce
 
 # Examples
 
-See [examples](https://github.com/melezhik/DSCI/tree/main/examples) folder
+See [~examples](https://github.com/melezhik/DSCI/tree/main/examples) folder
