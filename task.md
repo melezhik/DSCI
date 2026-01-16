@@ -1,6 +1,6 @@
 # Tasks
 
-To create a tasks, create a task folder within `tasks/` directory and within this folder task file named as `task.$ext`, where $ext is one of supported by SDK languages extension, for example:
+To create a task, create a task folder within `tasks/` directory and within this folder task file named as `task.$ext`, where $ext is one of supported by SDK languages extension, for example:
 
 *tasks/task_one/task.python*
 
