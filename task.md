@@ -103,6 +103,7 @@ param1=$(config param1)
 +-------------+-------------------+
 ```
 
+---
 
 Tasks variables and job parameters serve the same purpose - configure your scripts, the difference is job parameters are set inside pipeline or in job default configuration file, while tasks variables are defined inside job file.
 
