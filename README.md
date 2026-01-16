@@ -122,7 +122,6 @@ Then pick it up within any other tasks/* task by using get\_state function
 
 dict = get_state()
 print(dict["out1"])
-
 ```
 
 ## Passing states between jobs

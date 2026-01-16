@@ -36,7 +36,7 @@ Following is a list of job file names for different languages:
 +------------+--------------+
 ```
 
-Usually job is just a sequence of running [tasks](https://github.com/melezhik/DSCI/tree/main/tasks.md), but maybe any code:
+Usually job is just a sequence of running [tasks](https://github.com/melezhik/DSCI/tree/main/task.md), but maybe any code:
 
 *job_one/job.python*
 
