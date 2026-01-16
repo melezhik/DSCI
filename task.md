@@ -58,7 +58,7 @@ foo = task_var("foo")
 +------------+----------------------------------------------+
 | Raku       | run_task(String,HASH)                        |
 | Perl       | run_task(SCALAR,HASHREF)                     |
-| Bash       | run_task TASK_NANE NAME VAL NAME2 VAL2       |
+| Bash       | run_task TASK_NAME NAME VAL NAME2 VAL2       |
 | Python     | run_task(STRING,DICT)                        |
 | Ruby       | run_task(STRING,HASH)                        |
 | Powershell | run_task(STRING,HASH)                        |
