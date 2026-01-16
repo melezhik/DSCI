@@ -219,13 +219,13 @@ docker run dsci job_one task_two foo="foo_value"  bar="bar value"
 ```
 # Pipelines vs Jobs vs Tasks vs Plugins
 
-- [Pipeline](https://github.com/melezhik/DSCI/tree/main/pipeline.md) is a list of jobs executed sequentially
+- [Pipeline](/doc/pipeline) is a list of jobs executed sequentially
 
-- [Job](https://github.com/melezhik/DSCI/tree/main/job.md) is a list of tasks executed sequentially
+- [Job](/doc/job) is a list of tasks executed sequentially
 
 - Isolation:
 
-Jobs are executed on isolated environments, while [tasks](https://github.com/melezhik/DSCI/tree/main/task.md) within a certain job are executed in the same enviorment
+Jobs are executed on isolated environments, while [tasks](/doc/task) within a certain job are executed in the same enviorment
 
 - Environments could be either containers or virtual machines
 
@@ -237,11 +237,11 @@ Jobs are executed on isolated environments, while [tasks](https://github.com/mel
 
 * DSCI reports
 
-![UI](screenshots/ui.jpeg)
+![UI](https://raw.githubusercontent.com/melezhik/DSCI/refs/heads/main/screenshots/ui.jpeg)
 
 * Forgejo commit status via DSCI
 
-![Commit check](screenshots/commit-check.jpeg)
+![Commit check](https://raw.githubusercontent.com/melezhik/DSCI/refs/heads/main/screenshots/commit-check.jpeg)
 
 # Examples
 

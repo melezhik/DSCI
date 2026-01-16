@@ -74,4 +74,3 @@ go to created repo and create pipeline code under `.dsci` directory, see instruc
 
 Happy hacking with forgejo and dsci! 😄
 
-

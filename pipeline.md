@@ -13,7 +13,7 @@ jobs:
     path: job_two/
 ```
 
-Jobs contain list of jobs to be executed sequentially. Every job has to have a unique id. If path is set job source is taken from path directory, see [job.md](job.md)
+Jobs contain list of jobs to be executed sequentially. Every job has to have a unique id. If path is set job source is taken from path directory, see [job](job)
 
 Job list may contain plugins instead of regular jobs:
 
@@ -73,4 +73,4 @@ say config()<foo>;
 
 # Further reading 
 
-[Jobs](https://github.com/melezhik/DSCI/tree/main/job.md)
+[Jobs](/doc/job)
