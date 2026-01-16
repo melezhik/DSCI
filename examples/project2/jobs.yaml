@@ -1,0 +1,7 @@
+jobs:
+  - 
+    id: job1
+    path: job_one/
+  - 
+    id: job2
+    path: job_two/

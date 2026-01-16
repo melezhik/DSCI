@@ -247,6 +247,4 @@ in the same enviorment
 
 # Example project
 
-It's kind boilerplate, but you can see the main idea
-
-[examples/project](https://github.com/melezhik/DSCI/tree/main/examples/project)
+See [examples](https://github.com/melezhik/DSCI/tree/main/examples) folder

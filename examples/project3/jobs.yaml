@@ -1,0 +1,17 @@
+## runs job1, job2 sequentially
+jobs:
+  -
+    id: build_essential
+    plugin: build-essential
+    params:
+      sudo: {}
+#  -
+#    id: az_cli
+#    plugin: alpine-az-cli-install
+#    params:
+#      foo: bar  
+  - 
+    id: job1
+    path: job1
+    params:
+      foo: bar
