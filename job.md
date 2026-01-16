@@ -50,7 +50,7 @@ run_task(
 );
 ```
 
-Task execution is done by calling `run_task()` function which is supported by all SDK languages, it takes the first mandatory parameter a path inside `tasks/` directory where task files resides, and optionally tasks variables passed as dictionary
+Task execution is done by calling `run_task()` function which is supported by all SDK languages, it takes the first mandatory parameter as a path inside `tasks/` directory where task files resides, and optionally tasks variables passed as dictionary
 
 `run_task` function signatures for supported languages:
 
