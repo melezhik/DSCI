@@ -117,7 +117,6 @@ Say, task_one set two parameters (out1, out2) like this:
 
 ```python
 #!/usr/python3
-
 update_state({
   'out1' : 'out1 value',
   'out2' : 'out2 value'
@@ -169,6 +168,27 @@ update_state "cnt" 100
 | Powershell  | get_state()       |
 +-------------+-------------------+
 ```
+
+## Exchange state between jobs
+
+To exchange data between different jobs the last executed `update_state()` results are taken and available for further consumption in other jobs.
+
+Let's say we have `job_one/tasks/task_one/task.py` task ( within job with id `job1`) that define some state:
+
+```python
+update_state({
+  'message' : 'hello from job job_one'
+})
+```
+
+Then any other job may read the data by using `get_state()`:
+
+```python
+state = get_state()
+message = state["_dsci_"]["job1"]["message"]
+```
+
+Notice that key path is built from job ID, which is `job1`, it should also start with reserved key "\_dsci\_"  
 
 # Further reading 
 
