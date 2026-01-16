@@ -103,6 +103,9 @@ param1=$(config param1)
 +-------------+-------------------+
 ```
 
+
+Tasks variables and job parameters serve the same purpose - configure your scripts, the difference is job parameters are set inside pipeline or in job default configuration file, while tasks variables are defined inside job file.
+
 ## Exchange state between tasks
 
 Tasks may exchange data between tasks within the same job by using `update_state()`,`get_state()` functions.
