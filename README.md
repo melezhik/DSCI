@@ -187,9 +187,9 @@ For example:
 ```yaml
 jobs:
   - 
-    # install mysql database
-    id: mysql
-    plugin: mysql
+    # install mariadb database
+    id: db
+    plugin: mariadb
   - 
     id: job1
     path: job_one/

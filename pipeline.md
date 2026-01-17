@@ -47,7 +47,7 @@ jobs:
     id: build_essential
     plugin: build-essential
     params:
-      sudo: {}
+      sudo: true
 ```
 
 Input parameters within job tasks are handled by the use of `config()` function available for all supported by SDK languages:
