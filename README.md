@@ -209,11 +209,10 @@ Jobs are executed either on ephemeral containers (alpine:latest)
 
 # Running pipelines locally
 
-* enable debug option for job, f.e.
+* enable debug option for a job, f.e.
 
 ```yaml
 jobs:
-  - 
   - 
     id: job1
     path: job_one/
@@ -222,7 +221,7 @@ jobs:
 
 The run job and copy job effective configuration from output.
 
-* Paste configuration into config.yaml under job root directory:
+* Paste configuration into `config.yaml` under job root directory:
 
 *job_one/config.yaml*
 
@@ -230,8 +229,8 @@ The run job and copy job effective configuration from output.
 
 ```bash
 docker run -it dsci \
---entrypoint "bash -c cd .dsci/job_one/ && s6 --task-run"  \
--v $PWD:.dsci/job_one/
+--entrypoint "bash -c cd /opt/.dsci/job_one/ && s6 --task-run ."  \
+-v $PWD:/opt/
 ```
 
 # Pipelines vs Jobs vs Tasks vs Plugins
