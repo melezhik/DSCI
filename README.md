@@ -209,14 +209,31 @@ Jobs are executed either on ephemeral containers (alpine:latest)
 
 # Running pipelines locally
 
-Just use dsci cli container image and then:
+* enable debug option for job, f.e.
+
+```yaml
+jobs:
+  - 
+  - 
+    id: job1
+    path: job_one/
+    debug: true
+```
+
+The run job and copy job effective configuration from output.
+
+* Paste configuration into config.yaml under job root directory:
+
+*job_one/config.yaml*
+
+* Run job locally
 
 ```bash
-#!/bin/bash
-docker run dsci job_one 
-docker run dsci job_two
-docker run dsci job_one task_two foo="foo_value"  bar="bar value"
+docker run -it dsci \
+--entrypoint "bash -c cd .dsci/job_one/ && s6 --task-run"  \
+-v $PWD:.dsci/job_one/
 ```
+
 # Pipelines vs Jobs vs Tasks vs Plugins
 
 - [~Pipeline](/doc/pipeline) is a list of jobs executed sequentially
