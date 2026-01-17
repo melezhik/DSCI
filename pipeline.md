@@ -44,10 +44,12 @@ jobs:
             - green
             - red
  -
-    id: build_essential
-    plugin: build-essential
+    id: database
+    plugin: mariadb
     params:
-      sudo: true
+      db_user: alpine
+      db_pass: SecReet
+      db_name: products
 ```
 
 Input parameters within job tasks are handled by the use of `config()` function available for all supported by SDK languages:

@@ -205,7 +205,7 @@ TDB - example of how to write job plugin (pretty much as any job)
 
 # Containers support
 
-Jobs are executed either on ephemeral containers or directly on VM
+Jobs are executed either on ephemeral containers (alpine:latest)
 
 # Running pipelines locally
 
@@ -227,7 +227,7 @@ docker run dsci job_one task_two foo="foo_value"  bar="bar value"
 
 Jobs are executed on isolated environments, while [~tasks](/doc/task) within a certain job are executed in the same enviorment
 
-- Environments could be either containers or virtual machines
+- Environments are represented by ephemeral containers
 
 - Jobs/tasks can share/pass states
 
