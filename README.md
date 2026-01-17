@@ -223,14 +223,16 @@ The run job and copy job effective configuration from output.
 
 * Paste configuration into `config.yaml` under job root directory:
 
-*job_one/config.yaml*
+*.dsci/job_one/config.yaml*
 
 * Run job locally
 
 ```bash
-docker run -it dsci \
---entrypoint "bash -c cd /opt/.dsci/job_one/ && s6 --task-run ."  \
--v $PWD:/opt/
+cd .dsci/job_one
+docker run -it -v $PWD:/opt/job  \
+--entrypoint /bin/bash \
+-v $PWD:/opt/job dsci \
+-c "cd /opt/job/; s6 --task-run ."
 ```
 
 # Pipelines vs Jobs vs Tasks vs Plugins
