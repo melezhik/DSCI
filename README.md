@@ -221,17 +221,16 @@ jobs:
 
 The run job and copy job effective configuration from output.
 
-* Paste configuration into `config.yaml` under job root directory:
-
-*.dsci/job_one/config.yaml*
+* Paste configuration into some file, f.e.`.config.json`
 
 * Run job locally
 
 ```bash
-cd .dsci/job_one
-docker run -it \
---entrypoint /bin/bash \
--v $PWD:/opt/job dsci \
+docker run  \
+--env SP6_TASK_CONFIG_FROM=.config.json 
+\-it 
+\--entrypoint /bin/bash \
+-v $PWD:/opt/job dsci  \
 -c "cd /opt/job/; s6 --task-run ."
 ```
 
