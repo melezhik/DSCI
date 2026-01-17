@@ -12,7 +12,7 @@ We are on discord, [~join](https://discord.gg/KSMRTZ9F) us!
 
 * no painful YAML pipelines, use general purpose programming languages for your pipelines instead
 
-* fully integrated with big guns like [Forgejo](/doc/forgejo-setup)/Codeberg/Gitea/Gitlab/Github
+* fully integrated with big guns like [~Forgejo](/doc/forgejo-setup)/Codeberg/Gitea/Gitlab/Github
 
 * repeatable steps are written as plugins on general purpose programming languages 
 and used as is
