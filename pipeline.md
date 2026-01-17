@@ -24,7 +24,7 @@ jobs:
     plugin: build-essential
 ```
 
-Plugins are reusable jobs, see http://sparrowhub.io/plugins for available plugins
+Plugins are reusable jobs, see [~http://sparrowhub.io](https://sparrowhub.io/search?q=all) for available plugins
 
 ## Parameters
 
