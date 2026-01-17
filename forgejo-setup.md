@@ -43,11 +43,14 @@ docker build . -t dsci
 On the same host where forgejo instance runs:
 
 ```bash
+docker network create dsci || :
 docker run \
+--network dsci \
+--rm --name dsci -it \
 -p 4000:4000 \
---memory="4g" \
---env FORGEJO_HOST=http://host.docker.internal:3000 \
---env FORGEJO_API_TOKEN=token \
+--env FORGEJO_HOST=$FORGEJO_HOST \
+--env FORGEJO_API_TOKEN=$FORGEJO_API_TOKEN \
+-v /var/run/docker.sock:/var/run/docker.sock \
 dsci
 ```
 
