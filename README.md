@@ -229,7 +229,7 @@ The run job and copy job effective configuration from output.
 
 ```bash
 cd .dsci/job_one
-docker run -it -v $PWD:/opt/job  \
+docker run -it \
 --entrypoint /bin/bash \
 -v $PWD:/opt/job dsci \
 -c "cd /opt/job/; s6 --task-run ."
