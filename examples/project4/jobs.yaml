@@ -1,0 +1,7 @@
+jobs:
+  -
+    id: db
+    plugin: mariadb
+  - 
+    id: use_db
+    path: job_one/
