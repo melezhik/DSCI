@@ -226,12 +226,7 @@ The run job and copy job effective configuration from output.
 * Run job locally
 
 ```bash
-docker run  \
---env SP6_TASK_CONFIG_FROM=.config.json 
-\-it 
-\--entrypoint /bin/bash \
--v $PWD:/opt/job dsci  \
--c "cd /opt/job/; s6 --task-run ."
+docker run --env SP6_TASK_CONFIG_FROM=.config.json -it --entrypoint /bin/bash -v $PWD:/opt/job dsci -c "cd /opt/job/; s6 --task-run ."
 ```
 
 # Pipelines vs Jobs vs Tasks vs Plugins
