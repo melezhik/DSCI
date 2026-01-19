@@ -30,7 +30,7 @@ restart forgejo
 brew services restart forgejo
 ```
 
-# build dsci runner
+# build dsci orchestrator
 
 ```bash
 git clone https://github.com/melezhik/dsci-runner.git
@@ -38,7 +38,7 @@ cd dsci-runner
 docker build . -t dsci
 ```
 
-# run dsci runner
+# run dsci orchestrator
 
 On the same host where forgejo instance runs:
 
@@ -50,6 +50,7 @@ docker run \
 -p 4000:4000 \
 --env FORGEJO_HOST=$FORGEJO_HOST \
 --env FORGEJO_API_TOKEN=$FORGEJO_API_TOKEN \
+--env DSCI_FEEDBACK_URL=http://127.0.0.1:4000 \
 -v /var/run/docker.sock:/var/run/docker.sock \
 dsci
 ```
@@ -65,9 +66,7 @@ user settings -> applications -> manage access tokens -> generate token
 
 and inserted into the docker run command parameters. Permissions for access token needs to be set at least with "repository" permissions
 
-Once dsci container has run you should see some output from dsci job runner
-
-**Attention!** Please make it sure that dsci container is accessible from within your forgejo instance by http://127.0.0.1:4000 address.
+**Attention!** Make it sure DSCI_FEEDBACK_URL is available publicly to see dci reports from forgejo UI
 
 # set up dsci cicd pipeline
 
