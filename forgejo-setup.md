@@ -48,7 +48,7 @@ docker run \
 --network dsci \
 --rm --name dsci -it \
 -p 4000:4000 \
---env FORGEJO_HOST=$FORGEJO_HOST \
+--env FORGEJO_HOST=http://host.docker.internal:3000 \
 --env FORGEJO_API_TOKEN=$FORGEJO_API_TOKEN \
 --env DSCI_FEEDBACK_URL=http://127.0.0.1:4000 \
 -v /var/run/docker.sock:/var/run/docker.sock \
