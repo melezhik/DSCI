@@ -117,11 +117,6 @@ One can modify regular expression modifiers, to change matching logic.
 Following example skip job if commit message is `skip_ci` or `Skip_Ci` or `SKIP_CI` - case insensitive 
 modifier
 
-Follow [~Raku regexs](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://docs.raku.org/language/regexes)
-for more details
-
-```
-
 ```yaml
 jobs:
   -
@@ -129,6 +124,8 @@ jobs:
     path: .
     skip: m:i/skip_ci/ 
 ```
+
+Follow [~Raku regexs](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://docs.raku.org/language/regexes) for details
 
 ## Global jobs conditions
 
