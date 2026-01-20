@@ -68,7 +68,7 @@ jobs:
   -
     id: job_one
     path: .
-    only: .<ref> ~~ "refs/heads/" [ master || main ]
+    only: .<ref> ~~ "refs/heads/" [ master | main ]
 ```
 
 ## Parenthesis
