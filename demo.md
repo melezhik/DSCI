@@ -6,4 +6,6 @@ for demo project - [~http://forgejo.sparrowhub.io/root](http://forgejo.sparrowhu
 
 Feel free to register and start playing with your favorite projects / programming languages
 
+Just create some repo and `http://127.0.0.1:4000/forgejo_hook` to a repo web hook
+
 Join us on [~discord](https://discord.gg/KSMRTZ9F) to ask any questions
