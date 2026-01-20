@@ -31,7 +31,7 @@ jobs:
 
 Branch/Tag name. Example:
 
-refs/heads/main
+    refs/heads/main
 
 ## message
 
@@ -41,19 +41,19 @@ Commit message
 
 Full repository name. Example:
 
-root/go-build-example
+    root/go-build-example
 
 ## sha
 
 Commit SHA. Example:
 
-689b7f1e30537514759ce40086fd2218fb95793d
+    689b7f1e30537514759ce40086fd2218fb95793d
 
 ## scm
 
 Git repository URL. Example:
 
-http://127.0.0.1:3000/root/go-build-example.git
+    http://127.0.0.1:3000/root/go-build-example.git
 
 
 ## Regular expressions
@@ -114,13 +114,32 @@ regular expression matching, negation form
 
 One can modify regular expression modifiers, to change matching logic.
 
-Following example skip job if commit message is `skip` or `Skip` or `SKIP` - case insensitive 
+Following example skip job if commit message is `skip_ci` or `Skip_Ci` or `SKIP_CI` - case insensitive 
 modifier
 
 Follow [~Raku regexs](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://docs.raku.org/language/regexes)
 for more details
 
 ```
-skip: m:i/skip/ 
+
+```yaml
+jobs:
+  -
+    id: job_one
+    path: .
+    skip: m:i/skip_ci/ 
 ```
 
+## Global jobs conditions
+
+To globally skip/pass all jobs use `global:` key in the root of pipeline configuration:
+
+
+```yaml
+global:
+  skip: .<message> ~~ m:/skip/
+jobs:
+  -
+    id: job_one
+    path: .
+```
