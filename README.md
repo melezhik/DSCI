@@ -47,6 +47,22 @@ In your source code repository just drop few tasks under `.dsci` directory:
 └── jobs.yaml
 ```
 
+Pipeline:
+
+*jobs.yaml*
+
+```yaml
+# runs job1, job2 sequentially
+jobs:
+  - 
+    id: job1
+    path: job_one/
+  - 
+    id: job2
+    path: job_two/
+```
+
+Job file ( job one ):
 
 *job_one/job.py*
 
@@ -67,6 +83,8 @@ run_task(
 );
 ```
 
+Task file ( task one ):
+
 *job_one/tasks/task_one/task.py*
 
 ```python
@@ -74,33 +92,28 @@ print(task_var("foo"))
 print(task_var("bar"))
 ```
 
+Task file ( task two ):
+
 *job_one/tasks/task_two/task.bash*
 
 ```bash
 #!/bin/bash
 
-echo "hello from task one you passed: ${foo}|${bar}"
+echo "hello from task one you passed: foo=${foo}, bar=${bar}"
 ```
 
-*job_one/job.bash*
+Job file ( job two ):
+
+*job_two/job.bash*
 
 ```bash
 #!/bin/bash
 run_task "task_one"
 ```
 
-*jobs.yaml*
+---
 
-```yaml
-# runs job1, job2 sequentially
-jobs:
-  - 
-    id: job1
-    path: job_one/
-  - 
-    id: job2
-    path: job_two/
-```
+Etc. 
 
 ## Passing states between tasks
 
