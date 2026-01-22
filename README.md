@@ -47,7 +47,7 @@ In your source code repository just drop few tasks under `.dsci` directory:
 └── jobs.yaml
 ```
 
-Pipeline:
+## Pipeline
 
 *jobs.yaml*
 
@@ -62,7 +62,7 @@ jobs:
     path: job_two/
 ```
 
-Job file ( job one ):
+## Job file ( job one )
 
 *job_one/job.py*
 
@@ -83,7 +83,7 @@ run_task(
 );
 ```
 
-Task file ( task one ):
+## Task file ( task one )
 
 *job_one/tasks/task_one/task.py*
 
@@ -92,7 +92,7 @@ print(task_var("foo"))
 print(task_var("bar"))
 ```
 
-Task file ( task two ):
+## Task file ( task two )
 
 *job_one/tasks/task_two/task.bash*
 
