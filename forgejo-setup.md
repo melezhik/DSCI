@@ -1,3 +1,9 @@
+Prerequisites for self hosted installation
+
+* Forgejo
+* docker
+* golang ( to compile runner, pre-maid binaries cumming soon )
+
 # install forgejo
 
 ```bash
