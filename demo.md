@@ -4,6 +4,6 @@ This forego instance is integrated with DSCI runner and contains some examples f
 
 Feel free to register and start playing with your favorite projects / programming languages
 
-Just create some repo and add `http://127.0.0.1:4000/forgejo_hook` to a repo web hook. Then commit and push dsci pipeline ( see tutorial ) and it will be triggered
+Just create some repo and add `http://127.0.0.1:8080/forgejo_hook` to a repo web hook. Then commit and push dsci pipeline ( see tutorial ) and it will be triggered
 
 Join us on [~discord](https://discord.gg/KSMRTZ9F) to ask any questions

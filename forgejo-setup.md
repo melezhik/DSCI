@@ -17,7 +17,7 @@ go to forgejo ui and create some repo
 # set web hook for repo
 
 ```
-repo -> settings -> web hooks -> http://127.0.0.1:4000/forgejo_hook
+repo -> settings -> web hooks -> http://127.0.0.1:8080/forgejo_hook
 ```
 
 # set webhook allowed host
