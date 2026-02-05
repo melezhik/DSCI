@@ -86,3 +86,5 @@ Happy hacking with forgejo and dsci! 😄
 # Further reading 
 
 * [~Dsci runner configuration](/doc/configuration)
+
+* [~Maintenance](/doc/maintenance)
