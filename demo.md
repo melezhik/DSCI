@@ -1,6 +1,6 @@
 # Demo server
 
-This forego instance is integrated with DSCI runner and contains some examples for demo project - [~http://forgejo.sparrowhub.io/root](http://forgejo.sparrowhub.io/root)
+This forego public [~instance](~http://forgejo.sparrowhub.io/) is integrated with DSCI runner and contains some examples for demo project - [~http://forgejo.sparrowhub.io/root](http://forgejo.sparrowhub.io/root)
 
 Feel free to register and start playing with your favorite projects / programming languages
 
