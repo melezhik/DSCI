@@ -46,7 +46,8 @@ func thing(c *echo.Context) error {
 	data, err := os.ReadFile(path)
 
 	if err != nil {
-		log.Fatalf("thing: Error reading file: %s: %s", path, err)
+		log.Printf("thing: Error reading file: %s: %s", path, err)
+		return echo.ErrNotFound
 	}
 
 	return c.HTML(
@@ -82,31 +83,28 @@ func thing(c *echo.Context) error {
       </div>
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item" href="{http-root()}/">
+          <a class="navbar-item" href="/">
             Home
           </a>
-          <a class="navbar-item" href="{http-root()}/doc/pipeline">
+          <a class="navbar-item" href="/doc/pipeline">
             Pipelines
           </a>
-          <a class="navbar-item" href="{http-root()}/doc/job">
+          <a class="navbar-item" href="/doc/job">
             Jobs
           </a>
-          <a class="navbar-item" href="{http-root()}/doc/task">
+          <a class="navbar-item" href="/doc/task">
             Tasks
           </a>
-          <a class="navbar-item" href="{http-root()}/doc/envvars">
-            Env Vars
-          </a>
-          <a class="navbar-item" href="{http-root()}/doc/forgejo-setup">
+          <a class="navbar-item" href="/doc/forgejo-setup">
             Forgejo
           </a>
-         <a class="navbar-item" href="{http-root()}/doc/cookbook">
+         <a class="navbar-item" href="/doc/cookbook">
             Cookbook
           </a>
-          <a class="navbar-item" href="{http-root()}/doc/discord">
+          <a class="navbar-item" href="/doc/discord">
             Discord
           </a>
-          <a class="navbar-item" href="{http-root()}/doc/demo">
+          <a class="navbar-item" href="/doc/demo">
             Demo Server
           </a>
          <a class="navbar-item" href="https://github.com/melezhik/DSCI">
