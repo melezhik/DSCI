@@ -34,3 +34,10 @@ We are on discord, [~join](https://discord.gg/KSMRTZ9F) us!
 * Dead simple ~[pipelines](/doc/cicd) - YAMLess pipeline engine for forgejo
 
 * Dead simple plugins - we have a tons of plugins available from ~[https://sparrowhub.io](https://sparrowhub.io/search?q=all)
+
+
+---
+
+Further reading
+
+[installation guide](/docs/install)
