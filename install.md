@@ -29,7 +29,7 @@ http://127.0.0.1:3000
 # Further setup
 
 Normally everything is done via dsci [pipelines](~/doc/pipeline) which in nutshell are just Bash or Python scripts,
-so developers just need to write them using guidelines or use some existing dsci plugins
+so developers just need to write them using guidelines or use some existing dsci plugins to get the job done
 
 
 
