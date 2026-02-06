@@ -2,7 +2,11 @@
 
 [D]ead [S]imple CI - All batteries included self hosted PAAS for developers
 
----
+# TL;DR
+
+The idea is that - Forgejo +YAMLess pipelines for CICD, plus the same runner to install all necessary infra on single server. And devs are in control through Bash/Python not YAML )), no magic devops required
+
+# Join us
 
 We are on discord, [~join](https://discord.gg/KSMRTZ9F) us!
 
