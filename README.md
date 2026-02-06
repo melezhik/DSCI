@@ -16,12 +16,11 @@ We are on discord, [~join](https://discord.gg/KSMRTZ9F) us!
 
 * No magic devops knowledge required, any developer knowing Bash/Python could spin up infrastructure in seconds
 
-* IAC - databases/services/etc
+* IAC - databases/services/cron jobs/etc - everything through containers - your box is just a hardware provider - safe and simple
 
-* Standard flow support - containers/micro services/etc
+* Standard flow support - containers/micro services/backends/frontends/etc
 
 * Ideal for businesses and teams with limited budget 
-
 
 # DSCI building blocks
 

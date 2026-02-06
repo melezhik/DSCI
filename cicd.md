@@ -13,7 +13,7 @@ Yamless pipeline engine
 * repeatable steps are written as plugins on general purpose programming languages 
 and used as is
 
-* for developers - pipelines get run as normal scripts (useful for debugging)
+* for developers - pipelines get run as normal scripts
 
 \[Limitations\]
 
