@@ -25,7 +25,7 @@ We are on discord, [~join](https://discord.gg/KSMRTZ9F) us!
 
 # DSCI building blocks
 
-* ~[Forgejo](doc/forgejo) - smart and modern CI server
+* ~[Forgejo](/doc/forgejo) - smart and modern CI server
 
-* Dead Simple [Pipelines](doc/cicd) - YAMLess pipeline engine for forgejo
+* Dead Simple ~[Pipelines](/doc/cicd) - YAMLess pipeline engine for forgejo
 
