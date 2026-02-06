@@ -40,4 +40,4 @@ We are on discord, [~join](https://discord.gg/KSMRTZ9F) us!
 
 # Further reading
 
-[~installation guide](/docs/install)
+[~installation guide](/doc/install)

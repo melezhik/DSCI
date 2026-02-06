@@ -16,8 +16,10 @@ http://127.0.0.1:8080
 
 Go to forgejo interface, go to `infra` repository, edit some example pipeline to install some basic services (ssh/mysql/etc)
 
-http://127.0.0.1:8080
+http://127.0.0.1:3000
 
+
+PS> 127.0.0.1 should be replace by your server public IP address
 
 # Further setup
 
