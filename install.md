@@ -14,7 +14,11 @@ http://127.0.0.1:8080
 
 # Setup some infrastructure
 
-Go to forgejo interface, go to `infra` repository, edit some example pipeline to install some basic services (ssh/mysql/etc)
+* Go to forgejo interface
+
+* Login using admin/admin credentials (should be changed afterwords)
+
+* Go to `infra` repository, edit and run example pipeline to install some basic services (ssh/mysql/etc)
 
 http://127.0.0.1:3000
 
