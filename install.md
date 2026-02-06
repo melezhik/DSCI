@@ -18,8 +18,9 @@ Go to forgejo interface, go to `infra` repository, edit some example pipeline to
 
 http://127.0.0.1:3000
 
+## Note
 
-PS> 127.0.0.1 should be replace by your server public IP address
+ 127.0.0.1 should be replaced by your server public IP address
 
 # Further setup
 
