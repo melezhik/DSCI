@@ -24,7 +24,8 @@ We are on discord, [~join](https://discord.gg/KSMRTZ9F) us!
 
 * Standard flow support - containers/micro services/backends/frontends/etc
 
-* Ideal for businesses and teams with limited budget 
+* Ideal for businesses and teams with limited budget
+
 
 # DSCI building blocks
 
@@ -32,3 +33,4 @@ We are on discord, [~join](https://discord.gg/KSMRTZ9F) us!
 
 * Dead Simple ~[Pipelines](/doc/cicd) - YAMLess pipeline engine for forgejo
 
+* Dead Simple CI plugins - we have a tons of plugins available from ~[https://sparrowhub.io](https://sparrowhub.io/search?q=all)
