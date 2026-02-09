@@ -57,7 +57,7 @@ print("hello world")
 
 ### Setup infrastructure pipeline
 
-Infrastructure pipeline unlike regular pipelines run on VM, not in docker.
+Infrastructure pipelines unlike regular pipelines run on VM, not in docker.
 
 They are used by server administrators to setup server running DSCI stack
 
@@ -81,8 +81,6 @@ jobs:
         id: job1
         path: .
 ```
-
-Note: 
 
 # Further setup
 
