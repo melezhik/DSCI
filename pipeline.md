@@ -73,6 +73,28 @@ Raku
 say config()<foo>;
 ```
 
+---
+
+Single task job. Sometimes all one needs is single task job, then
+
+just drop `task.$ext` file under job directory, no job file is required
+
+
+`.dsci/jobs.yaml`
+
+```yaml
+jobs:
+    -
+        id: job1
+        path: .
+```
+
+`.dsci/task.py`
+
+```python
+print("hello world")
+```
+
 # Further reading 
 
 [~Jobs](/doc/job)

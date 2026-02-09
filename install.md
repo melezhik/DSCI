@@ -1,35 +1,90 @@
 # Install
 
-Download and run dsci main binary
+Self hosted installation guide
 
+## dependencies
+
+On machine (VM) running DSCI following dependencies should be installed:
+
+- docker
+- sshd
+- forgejo
+
+### Install forgejo
+
+Follow forgejo documentation
+
+### Install dsci runner
+
+Right now dsci runner needs to be  built from source code, ready to use binaries
+for various architectures coming soon:
+
+```bash
+git clone https://github.com/melezhik/dsci-runner.git
+cd dsci-runner
+go mod tidy
+go build -o dsci_runner main.go
 ```
-curl http://dsci.sparrowhub.io/distors/dsci_1.0.1 -o dsci
-./dsci
+
+### Configure forgejo and dsci runner
+
+Follow ~[this documentation](/doc/forgejo-setup)
+
+### Create first pipeline
+
+* Create repo, setup web hook
+
+* Create pipeline code
+
+`.dsci/jobs.yaml`
+
+```yaml
+jobs:
+    -
+        id: job1
+        path: .
 ```
 
-Go to web interface and run bootstrap button to install forgejo and dsci job orchestrator
+`.dsci/task.py`
 
-http://127.0.0.1:8080
+```python
+print("hello world")
+```
 
+* Push it
 
-# Setup some infrastructure
+* See results
 
-* Go to forgejo interface
+### Setup infrastructure pipeline
 
-* Login using admin/admin credentials (should be changed afterwords)
+Infrastructure pipeline unlike regular pipelines run on VM, not in docker.
 
-* Go to `infra` repository, edit and run example pipeline to install some basic services (ssh/mysql/etc)
+They are used by server administrators to setup server running DSCI stack
 
-http://127.0.0.1:3000
+Requirements:
 
-## Note
+One needs to ensure following for server running dsci runner:
 
- 127.0.0.1 should be replaced by your server public IP address
+* enable passwordless sudo for user running dsci runner
+
+* open 22 port on 127.0.0.1
+
+to make pipeline run on localhost use `global.localhost` modifier:
+
+`.dsci/jobs.yaml`
+
+```yaml
+global:
+    localhost: true
+jobs:
+    -
+        id: job1
+        path: .
+```
+
+Note: 
 
 # Further setup
 
 Normally everything is done via dsci [pipelines](~/doc/pipeline) which in nutshell are just Bash or Python scripts,
 so developers just need to write them using guidelines or use some existing dsci plugins to get the job done
-
-
-

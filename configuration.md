@@ -1,4 +1,4 @@
-# DSCI configuration variables
+# DSCI runner configuration variables
 
 Dsci configuration settings are defined at `~/.dsci.toml` in TOML format
 
@@ -14,7 +14,7 @@ DsciFeedbackUrl: "http://dsci-runner.sparrowhub.io"
 
 ## DsciAgentSkipBootstrap
 
-Skip DSCI agent ( job runner ) bootstrap
+Skip DSCI agent bootstrap
 
 Example:
 
