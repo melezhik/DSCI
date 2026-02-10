@@ -69,6 +69,12 @@ One needs to ensure following for server running dsci runner:
 
 * open 22 port on 127.0.0.1
 
+* add DsciAllowLocalhostMode to ~/.dsci.toml and restart dsci runner
+
+```toml
+DsciAllowLocalhostMode: true
+```
+
 to make pipeline run on localhost use `global.localhost` modifier:
 
 `.dsci/jobs.yaml`
@@ -81,6 +87,7 @@ jobs:
         id: job1
         path: .
 ```
+
 
 # Further setup
 
