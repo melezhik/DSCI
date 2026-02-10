@@ -26,6 +26,7 @@ Following is a list of tasks file names for different languages:
 | Python     | task.py      |
 | Ruby       | task.rb      |
 | Powershell | task.ps1     |
+| Php        | task.php     |
 | Golang     | task.go      |
 +------------+--------------+
 ```
@@ -36,6 +37,28 @@ Tasks are called from [~job file](/doc/job) using `run_task()` function, it take
 #!/bin/python3
 run_task("task_one"); # will run task inside tasks/task_one/ folder
 run_task("task_two"); # will run task inside tasks/task_two/ folder
+```
+---
+
+## Single task job
+
+Sometimes all you need is a single task job.
+
+To create single task job just drop `task.$ext` file under job directory, no job file is required:
+
+`.dsci/jobs.yaml`
+
+```yaml
+jobs:
+    -
+        id: job1
+        path: .
+```
+
+`.dsci/task.py`
+
+```python
+print("hello world")
 ```
 
 Tasks may take some input variables by passing the second argument to `run_task()`function:
@@ -82,12 +105,6 @@ job_params = config()
 print(job_params["param1"])
 ```
 
-Bash example:
-
-```bash
-param1=$(config param1)
-```
-
 `config()` function signature for supported languages:
 
 ```
@@ -96,12 +113,33 @@ param1=$(config param1)
 +-------------+-------------------+
 | Raku        | config()          |
 | Perl        | config()          |
-| Bash        | config()          |
+| Bash(*)     | config(string)    |
 | Python      | config()          |
 | Ruby        | config()          |
 | Powershell  | config()          |
+| Php         | config()          |
 +-------------+-------------------+
 ```
+
+(*) Bash has following use case:
+
+```bash
+#!bash
+param1=$(config param1)
+echo $param1
+```
+
+---
+
+Default job parameters
+
+If there is a file named `config.yaml` inside job directory it sets default job parameters:
+
+```yaml
+param1: default_value
+```
+
+Inside task default parameters are accissble via `config` function
 
 ---
 
@@ -141,9 +179,10 @@ print(dict["out1"])
 | Raku        | update_state(array|hash)    |
 | Perl        | update_state(array|hash)    |
 | Bash(*)     | update_state(key,value)     |
-| Python      | update_state(array|hash)    |
+| Python      | update_state(array|dict)    |
 | Ruby        | update_state(array|hash)    |
 | Powershell  | update_state(array|hash)    |
+| Php         | update_state(array|dict)    |
 +-------------+-----------------------------+
 ```
 
@@ -166,6 +205,7 @@ update_state "cnt" 100
 | Python      | get_state()       |
 | Ruby        | get_state()       |
 | Powershell  | get_state()       |
+| Php         | get_state()       |
 +-------------+-------------------+
 ```
 

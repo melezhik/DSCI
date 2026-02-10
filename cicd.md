@@ -164,6 +164,7 @@ The same SDK for those programming languages:
 * Bash
 * Python
 * Golang
+* Php
 * Ruby
 * Powershell
 * Raku

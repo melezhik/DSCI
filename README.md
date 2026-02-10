@@ -31,7 +31,7 @@ We are on discord, [~join](https://discord.gg/KSMRTZ9F) us!
 
 * ~[Forgejo](/doc/forgejo) - smart and modern CI server
 
-* Dead simple ~[pipelines](/doc/cicd) - YAMLess pipeline engine for forgejo
+* Dead simple ~[ci](/doc/cicd) - YAMLess pipeline engine for forgejo
 
 * Dead simple plugins - we have a tons of plugins available from ~[https://sparrowhub.io](https://sparrowhub.io/search?q=all)
 

@@ -75,10 +75,12 @@ say config()<foo>;
 
 ---
 
-Single task job. Sometimes all one needs is single task job, then
+## Single task job
 
-just drop `task.$ext` file under job directory, no job file is required
+Sometimes all you need is a single task job.
 
+To create single task job just drop `task.$ext` file under job directory, 
+no job file is required:
 
 `.dsci/jobs.yaml`
 

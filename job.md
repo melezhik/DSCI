@@ -109,7 +109,7 @@ say task_var("foo");
 
 # Default job parameters
 
-If there is file named `config.yaml` inside job directory it sets jobs default parameters:
+If there is a file named `config.yaml` inside job directory it sets default jobs parameters:
 
 ```yaml
 name: Alexey
@@ -125,7 +125,6 @@ print(dict["name"])
 print(dict["occupation"])
 print(dict["residency"])
 ```
-
 
 Job default parameters might be overridden by job parameters inside pipeline
 
