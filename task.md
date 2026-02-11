@@ -235,3 +235,5 @@ Notice that key path is built from job ID, which is `job1`, it should also start
 * [~Pipelines](/doc/pipeline)
 
 * [~Jobs](/doc/job)
+
+* [~Predefined pipeline variables](/doc/predefined-vars)

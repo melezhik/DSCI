@@ -138,3 +138,5 @@ Job default parameters might be overridden by job parameters inside pipeline
 * [~Pipelines](/doc/pipeline)
 
 * [~Tasks](/doc/task)
+
+* [~Predefined pipeline variables](/doc/predefined-vars)

@@ -99,4 +99,6 @@ print("hello world")
 
 # Further reading 
 
-[~Jobs](/doc/job)
+- [~Jobs](/doc/job)
+
+- [~Predefined pipeline variables](/doc/predefined-vars)
