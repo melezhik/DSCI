@@ -32,6 +32,7 @@ Following is a list of job file names for different languages:
 | Python     | job.py       |
 | Ruby       | job.rb       |
 | Powershell | job.ps1      |
+| Php        | job.php      |
 | Golang     | job.go       |
 +------------+--------------+
 ```
@@ -64,6 +65,7 @@ Task execution is done by calling `run_task()` function which is supported by al
 | Python     | run_task(STRING,DICT)                        |
 | Ruby       | run_task(STRING,HASH)                        |
 | Powershell | run_task(STRING,HASH)                        |
+| Php        | run_task(STRING,DICT)                        |
 +------------+----------------------------------------------+
 ```
 
@@ -104,6 +106,7 @@ say task_var("foo");
 | Bash (1-st way)  | $foo                                           |
 | Bash (2-nd way)  | $(task_var foo)                                |
 | Powershell       | task_var(STRING)                               |
+| Php              | task_var(STRING)                               |
 +------------------+------------------------------------------------+
 ```
 
