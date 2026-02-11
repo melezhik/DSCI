@@ -214,7 +214,7 @@ TDB - example of how to write job plugin (pretty much as any job)
 
 # Containers support
 
-Jobs are executed either on ephemeral containers (alpine:latest)
+Jobs are executed either on ephemeral containers (alpine:latest) or on localhost
 
 # Running pipelines locally
 
@@ -228,7 +228,7 @@ jobs:
     debug: true
 ```
 
-The run job and copy job effective configuration from output.
+Then run job and copy job effective configuration from output.
 
 * Paste configuration into some file, f.e.`.config.json`
 

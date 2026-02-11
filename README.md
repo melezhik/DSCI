@@ -40,4 +40,6 @@ We are on discord, [~join](https://discord.gg/KSMRTZ9F) us!
 
 # Further reading
 
-[~installation guide](/doc/install)
+* [~Installation guide](/doc/install)
+
+* [~Dead simple ci](/doc/cicd) 
