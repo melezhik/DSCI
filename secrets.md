@@ -1,6 +1,7 @@
 # Secrets
 
-One may provide secrets accessible from ci pipelines
+Secrets are piece of sensitive data, passed to ci pipelines. Unlike other
+configuration data secrets are not visible in logs or reports.
 
 # Create secret
 
