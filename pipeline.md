@@ -102,3 +102,5 @@ print("hello world")
 - [~Jobs](/doc/job)
 
 - [~Predefined pipeline variables](/doc/predefined-vars)
+
+- [~Pipeline secrets](/doc/secrets)
