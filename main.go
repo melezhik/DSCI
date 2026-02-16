@@ -125,7 +125,7 @@ func thing(c *echo.Context) error {
       <div class="hero-body">
         <p class="title">%s</p>
 		<hr>
-		<p class="markdown-body" id="data">%s</p>
+		<p class="content" id="data">%s</p>
       </div>
     </section>
   <script type="text/javascript">
