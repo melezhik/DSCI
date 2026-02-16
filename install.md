@@ -91,5 +91,5 @@ jobs:
 
 # Further setup
 
-Normally everything is done via dsci [pipelines](~/doc/pipeline) which in nutshell are just Bash or Python scripts,
+Normally everything is done via dsci [pipelines](/pipeline.md) which in nutshell are just Bash or Python scripts,
 so developers just need to write them using guidelines or use some existing dsci plugins to get the job done
