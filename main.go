@@ -62,7 +62,7 @@ func thing(c *echo.Context) error {
 	return c.HTML(
 		http.StatusOK,
 		fmt.Sprintf(
-			`<html data-theme="light">
+			`<html data-theme="dark">
   <head>
     <meta charset="utf-8">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
