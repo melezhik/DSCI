@@ -4,7 +4,6 @@ Job conditions allow to skip or pass jobs on certain criteria.
 
 Passing rules operate on job environment parameters is in `.<param> $condition` form, for example:
 
-
 Skip job_one is commit message is equal to 'skip'
 
 ```yaml
@@ -12,7 +11,7 @@ jobs:
   -
     id: job_one
     path: .
-    skip: .<message> eq "skip"
+    skip: .&lt;message&gt; eq "skip"
 ``` 
 
 One can combine multiple job env parameters using standard AND/OR/||/&& operators from Boolean logic:
