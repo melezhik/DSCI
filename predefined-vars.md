@@ -21,11 +21,23 @@ ssh = c[DSCI_COMMIT] # commit sha
 
 ## DSCI_COMMIT
 
-git commit
+git commit sha
 
 ## DSCI_SCM
 
 git repo clone url
+
+## DSCI_REF
+
+git reference ( tag or branch name )
+
+## DSCI_MESSAGE
+
+git commit message
+
+# DSCI_FULL_REPO
+
+git full repository name
 
 ## FORGEJO_HOST
 
