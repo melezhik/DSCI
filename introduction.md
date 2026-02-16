@@ -56,7 +56,7 @@ jobs:
      only: .<ref> eq "refs/heads/main"
 ```
 
-Read more on job conditions on dsci documentation - https://github.com/melezhik/DSCI/blob/main/job-cond.md
+Read more on job conditions on dsci documentation - [/job-cond](/job-cond.md)
 
 # Passing parameters to job
 
@@ -118,9 +118,9 @@ The neat thing about this DSL, dsci provides the same SDK for all supported prog
 
 Read more about jobs and tasks on dsci documentation web site:
 
-- http://deadsimpleci.sparrowhub.io/doc/task
+- [/task](/task.md)
 
-- http://deadsimpleci.sparrowhub.io/doc/job
+- [/job](/job.md)
 
 # Passing results between jobs
 
@@ -187,7 +187,6 @@ And unlike other task and jobs parameters they never saved in job reports or cac
 
 —-
 
-
 # Deployment on localhost 
 
 By default dsci pipelines run inside some docker container, this fits situation when one needs run purely ci code - for example build and run some unit tests. CD part comes to play when build artifacts are ready for deploy. 
@@ -219,4 +218,4 @@ Hopefully you like it.
 
 ---
 
-For comprehensive documentation and more information please visit dsci web site - http://deadsimpleci.sparrowhub.io/doc/README
+For comprehensive documentation and more information please visit dsci web site - [http://deadsimpleci.sparrowhub.io](http://deadsimpleci.sparrowhub.io)
