@@ -43,3 +43,5 @@ We are on discord, [~join](https://discord.gg/KSMRTZ9F) us!
 * [~Installation guide](/install.md)
 
 * [~Dead simple ci](/cicd.md) 
+
+* [DSCI introduction](/introduction.md)
