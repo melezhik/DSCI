@@ -29,7 +29,7 @@ We are on discord, [~join](https://discord.gg/KSMRTZ9F) us!
 
 # DSCI building blocks
 
-* ~[Forgejo](/forgejo.md) - smart and modern CI server
+* ~[Forgejo](/forgejo-setup.md) - smart and modern CI server
 
 * Dead simple ~[ci](/cicd.md) - YAMLess pipeline engine for forgejo
 
