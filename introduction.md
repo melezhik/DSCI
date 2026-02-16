@@ -1,16 +1,10 @@
----
-title: Dead Simple CI Introduction 
-published: true
-description: how to make use of dsci to write ci pipelines
-tags: cicd, pipelines, forgejo
-# cover_image: https://direct_url_to_image.jpg
-# Use a ratio of 100:42 for best results.
-# published_at: 2026-02-13 18:41 +0000
+# DSCI Framework introduction
+
 ---
 
 [Dsci](http://deadsimpleci.sparrowhub.io/doc/README) is a brand new kid on the cicd area. It allows use of general programming languages to create ci scenarios.
 
-——-
+---
 
 Consider some imaginary case of building and deploying an application as docker container. So, logically we have two main stages:
 
@@ -20,7 +14,7 @@ Consider some imaginary case of building and deploying an application as docker 
 
 Let’s see how dsci could tackle such a scenario …
 
-——-
+---
 
 # Pipeline file
 
@@ -215,7 +209,7 @@ jobs:
 ```
 In that case deployment occurs on VM running dsci orchestrator and which allows to restart docker container with new image version right on VM
 
-——-
+---
 
 That is it. 
 
@@ -223,6 +217,6 @@ This simple but real life example shows how easy and one can write cicd pipeline
 
 Hopefully you like it. 
 
-—-
+---
 
 For comprehensive documentation and more information please visit dsci web site - http://deadsimpleci.sparrowhub.io/doc/README
