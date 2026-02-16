@@ -44,4 +44,4 @@ We are on discord, [~join](https://discord.gg/KSMRTZ9F) us!
 
 * [~Dead simple ci](/cicd.md) 
 
-* [DSCI introduction](/introduction.md)
+* [~DSCI introduction](/introduction.md)
