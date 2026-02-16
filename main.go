@@ -8,6 +8,7 @@ import (
 	"log/slog"
 	"net/http"
 	"os"
+	"regexp"
 )
 
 func main() {
@@ -44,6 +45,10 @@ func thing(c *echo.Context) error {
 	path := fmt.Sprintf("%s.md",thing)
 
 	data, err := os.ReadFile(path)
+
+	re := regexp.MustCompile(`\/(\S+?)\.md`)
+
+	data = re.ReplaceAll(data, []byte("/doc/" + "$1" ))
 
 	if err != nil {
 		log.Printf("thing: Error reading file: %s: %s", path, err)
