@@ -19,7 +19,6 @@ ssh = c[DSCI_COMMIT] # commit sha
 
 # Variables List
 
-
 ## DSCI_COMMIT
 
 git commit
@@ -28,7 +27,11 @@ git commit
 
 git repo clone url
 
-## DSCI_JOBID
+## FORGEJO_HOST
+
+Forgejo host with schema and http port
+
+## DSCI_JOB_ID
 
 dsci job internal id
 
