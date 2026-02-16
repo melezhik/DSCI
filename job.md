@@ -37,7 +37,7 @@ Following is a list of job file names for different languages:
 +------------+--------------+
 ```
 
-Usually job is just a sequence of running [~tasks](/doc/task), but maybe any code:
+Usually job is just a sequence of running [~tasks](/task.md), but maybe any code:
 
 *job_one/job.python*
 
@@ -133,10 +133,10 @@ Job default parameters might be overridden by job parameters inside pipeline
 
 # Further reading 
 
-* [~Job Conditions](/doc/job-cond)
+* [~Job Conditions](/job-cond.md)
 
-* [~Pipelines](/doc/pipeline)
+* [~Pipelines](/pipeline.md)
 
-* [~Tasks](/doc/task)
+* [~Tasks](/task.md)
 
-* [~Predefined pipeline variables](/doc/predefined-vars)
+* [~Predefined pipeline variables](/predefined-vars.md)

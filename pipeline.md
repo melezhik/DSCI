@@ -99,8 +99,8 @@ print("hello world")
 
 # Further reading 
 
-- [~Jobs](/doc/job)
+- [~Jobs](/job.md)
 
-- [~Predefined pipeline variables](/doc/predefined-vars)
+- [~Predefined pipeline variables](/predefined-vars.md)
 
-- [~Pipeline secrets](/doc/secrets)
+- [~Pipeline secrets](/secrets.md)

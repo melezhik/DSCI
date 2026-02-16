@@ -28,7 +28,7 @@ go build -o dsci_runner main.go
 
 ### Configure forgejo and dsci runner
 
-Follow ~[this documentation](/doc/forgejo-setup)
+Follow ~[this documentation](/forgejo-setup.md)
 
 ### Create first pipeline
 

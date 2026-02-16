@@ -8,7 +8,7 @@ Yamless pipeline engine
 
 * no painful YAML pipelines, use general purpose programming languages for your pipelines instead
 
-* fully integrated with big guns like [~Forgejo](/doc/forgejo-setup)/Codeberg/Gitea/Gitlab/Github
+* fully integrated with big guns like [~Forgejo](/forgejo-setup.md)/Codeberg/Gitea/Gitlab/Github
 
 * repeatable steps are written as plugins on general purpose programming languages 
 and used as is
@@ -177,7 +177,7 @@ TBD - pipeline examples
 # Forgejo integration
 
 Use DSCI instead of YAML pipeline within your forgejo instance. Pipeline reports
-are available directly via forgejo. See [~instruction](/doc/forgejo-setup)
+are available directly via forgejo. See [~instruction](/forgejo-setup.md)
 
 # Codeberg/Gitea/Gitlab/Github integration
 
@@ -240,13 +240,13 @@ docker run --env SP6_TASK_CONFIG_FROM=.config.json -it --entrypoint /bin/bash -v
 
 # Pipelines vs Jobs vs Tasks vs Plugins
 
-- [~Pipeline](/doc/pipeline) is a list of jobs executed sequentially
+- [~Pipeline](/pipeline.md) is a list of jobs executed sequentially
 
-- [~Job](/doc/job) is a list of tasks executed sequentially
+- [~Job](/job.md) is a list of tasks executed sequentially
 
 - Isolation:
 
-Jobs are executed on isolated environments, while [~tasks](/doc/task) within a certain job are executed in the same enviorment
+Jobs are executed on isolated environments, while [~tasks](/task.md) within a certain job are executed in the same enviorment
 
 - Environments are represented by ephemeral containers
 

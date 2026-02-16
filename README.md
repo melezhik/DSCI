@@ -29,9 +29,9 @@ We are on discord, [~join](https://discord.gg/KSMRTZ9F) us!
 
 # DSCI building blocks
 
-* ~[Forgejo](/doc/forgejo) - smart and modern CI server
+* ~[Forgejo](/forgejo.md) - smart and modern CI server
 
-* Dead simple ~[ci](/doc/cicd) - YAMLess pipeline engine for forgejo
+* Dead simple ~[ci](/cicd.md) - YAMLess pipeline engine for forgejo
 
 * Dead simple plugins - we have a tons of plugins available from ~[https://sparrowhub.io](https://sparrowhub.io/search?q=all)
 
@@ -40,6 +40,6 @@ We are on discord, [~join](https://discord.gg/KSMRTZ9F) us!
 
 # Further reading
 
-* [~Installation guide](/doc/install)
+* [~Installation guide](/install.md)
 
-* [~Dead simple ci](/doc/cicd) 
+* [~Dead simple ci](/cicd.md) 
