@@ -56,7 +56,7 @@ jobs:
      only: .<ref> eq "refs/heads/main"
 ```
 
-Read more on job conditions on dsci documentation - [~job-cond](/job-cond.md)
+Read more on job conditions on dsci documentation [~job-conditions](/job-cond.md)
 
 # Passing parameters to job
 
@@ -118,9 +118,9 @@ The neat thing about this DSL, dsci provides the same SDK for all supported prog
 
 Read more about jobs and tasks on dsci documentation web site:
 
-- [~task](/task.md)
+- [~tasks](/task.md)
 
-- [~job](/job.md)
+- [~jobs](/job.md)
 
 # Passing results between jobs
 
