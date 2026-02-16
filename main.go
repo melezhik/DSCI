@@ -50,6 +50,10 @@ func thing(c *echo.Context) error {
 
 	data = re.ReplaceAll(data, []byte("/doc/" + "$1" ))
 
+	re = regexp.MustCompile(`\.\<(\S+?)\>`)
+
+	data = re.ReplaceAll(data, []byte(".&lt;" + "$1" + "&gt;" ))
+
 	if err != nil {
 		log.Printf("thing: Error reading file: %s: %s", path, err)
 		return echo.ErrNotFound

@@ -11,7 +11,7 @@ jobs:
   -
     id: job_one
     path: .
-    skip: .&lt;message&gt; eq "skip"
+    skip: .<message> eq "skip"
 ``` 
 
 One can combine multiple job env parameters using standard AND/OR/||/&& operators from Boolean logic:
