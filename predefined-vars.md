@@ -39,7 +39,7 @@ git commit message
 
 git full repository name
 
-## FORGEJO_HOST
+## DSCI_FORGEJO_HOST
 
 Forgejo host with schema and http port
 
