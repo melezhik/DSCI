@@ -69,10 +69,18 @@ One needs to ensure following for server running dsci runner:
 
 * open 22 port on 127.0.0.1
 
-* add DsciAllowLocalhostMode to ~/.dsci.toml and restart dsci runner
+* add git repository with infrastructure pipeline to the white list
+
+Set DsciAllowLocalhostModeRepos in  ~/.dsci.toml and restart dsci runner
 
 ```toml
-DsciAllowLocalhostMode: true
+# repos should be added in owner/repo
+# format
+DsciAllowLocalhostModeRepos = [
+  "root/test3",
+  "root/test4",
+  "root/test2"
+]
 ```
 
 to make pipeline run on localhost use `global.localhost` modifier:
@@ -81,13 +89,12 @@ to make pipeline run on localhost use `global.localhost` modifier:
 
 ```yaml
 global:
-    localhost: true
+  localhost: true
 jobs:
-    -
-        id: job1
-        path: .
+  -
+    id: job1
+    path: .
 ```
-
 
 # Further setup
 
