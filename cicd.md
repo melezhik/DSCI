@@ -254,16 +254,11 @@ Jobs are executed on isolated environments, while [~tasks](/task.md) within a ce
 
 - Plugins are the same as jobs, but reusable jobs published to https://sparrowhub.io
 
-# Screenshots
 
-* DSCI reports
+# Further reading
 
-![UI](https://raw.githubusercontent.com/melezhik/DSCI/refs/heads/main/screenshots/ui.jpeg)
+- [~Jobs](/job.md)
 
-* Forgejo commit status via DSCI
+- [~Pipelines](/pipeline.md)
 
-![Commit check](https://raw.githubusercontent.com/melezhik/DSCI/refs/heads/main/screenshots/commit-check.jpeg)
-
-# Examples
-
-See [~examples](https://github.com/melezhik/DSCI/tree/main/examples) folder
+- [~Examples](https://forgejo.sparrowhub.io/demo)
