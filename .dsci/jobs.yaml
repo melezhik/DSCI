@@ -1,0 +1,6 @@
+global:
+  localhost: true
+jobs:
+  -
+    id: UpdateSite
+    path: .
