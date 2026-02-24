@@ -129,7 +129,9 @@ echo "you say: $message"
 echo "inline: var_out='Bye!'"
 ```
 
-So instead of returning results through dsci internal cache we use inline syntax, declaring Bash variable. To use the plugin inside any Bash scenarios we just need to call using `s6` internal DSCI tasks cli:
+So instead of returning results through dsci internal cache we use inline syntax, declaring Bash variable. 
+
+To use the plugin inside any Bash scenarios we just need to call it using `s6` (internal DSCI tasks cli):
 
 ```bash
 #!/bin/bash
