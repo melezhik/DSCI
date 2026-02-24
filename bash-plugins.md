@@ -126,7 +126,7 @@ Let's change original task.bash a bit:
 message=$(config message)
 echo "you say: $message"
 
-echo "inline: out='Bye!'"
+echo "inline: var_out='Bye!'"
 ```
 
 So instead of returning results through dsci internal cache we use inline syntax, declaring Bash variable. To use the plugin inside any Bash scenarios we just need to call using `s6` internal DSCI tasks cli:
@@ -135,7 +135,7 @@ So instead of returning results through dsci internal cache we use inline syntax
 #!/bin/bash
 
 eval(s6 --plg-run foo@message='Hello from Bash')
-echo $a # should print Bye!
+echo $var_out # should print Bye!
 ```
 
 This mechanism effectively allow us plugins that depend on other plugins in runtime. Very cool.
