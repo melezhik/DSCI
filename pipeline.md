@@ -15,7 +15,7 @@ jobs:
 
 Jobs contain list of jobs to be executed sequentially. Every job has to have a unique id. If path is set job source is taken from path directory, see [~job](job)
 
-Job list may contain plugins instead of regular jobs:
+Job list may contain [~plugins](/bash-plugins.md) instead of regular jobs:
 
 ```yaml
 jobs:
@@ -24,11 +24,11 @@ jobs:
     plugin: build-essential
 ```
 
-Plugins are reusable jobs, see [~http://sparrowhub.io](https://sparrowhub.io/search?q=all) for available plugins
+[~Plugins](/bash-plugins.md) are reusable jobs, see [~http://sparrowhub.io](https://sparrowhub.io/search?q=all) for available _public_ plugins
 
 ## Parameters
 
-Jobs and plugins may take input parameters:
+Jobs and [~plugins](/bash-plugins.md) may take input parameters:
 
 ```yaml
 # runs job1, job2 sequentially

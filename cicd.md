@@ -10,7 +10,7 @@ Yamless pipeline engine
 
 * fully integrated with big guns like [~Forgejo](/forgejo-setup.md)/Codeberg/Gitea/Gitlab/Github
 
-* repeatable steps are written as plugins on general purpose programming languages 
+* repeatable steps are written as [~plugins](~/bash-plugins.md) on general purpose programming languages 
 and used as is
 
 * for developers - pipelines get run as normal scripts
@@ -185,7 +185,7 @@ TBD - installation/configuration howto
 
 # Using job plugins
 
-There are a plenty of job plugins for common tasks:
+There are a plenty of job [~plugins](~/bash-plugins.md) for common tasks:
 
 - installing database, services, etc
 
@@ -208,9 +208,7 @@ jobs:
   - 
 ```
 
-Job plugins act as native jobs, for example can use get\_state/update\_state function.
-
-TDB - example of how to write job plugin (pretty much as any job)
+Job [~plugins](~/bash-plugins.md) act as native jobs, for example can use get\_state/update\_state function.
 
 # Containers support
 
@@ -252,7 +250,7 @@ Jobs are executed on isolated environments, while [~tasks](/task.md) within a ce
 
 - Jobs/tasks can share/pass states
 
-- Plugins are the same as jobs, but reusable jobs published to https://sparrowhub.io
+- [~Plugins](~/bash-plugins.md) are the same as jobs, but reusable jobs published to https://sparrowhub.io
 
 
 # Further reading
