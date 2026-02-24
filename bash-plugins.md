@@ -118,7 +118,7 @@ Now consider we have plugin/foo/task.py:
 update_state({ "message" : "hello from Python" })
 ```
 
-We effectively set input parameter for our foo plugin.
+We effectively set input parameter for our foo plugin in runtime.
 
 # Passing results back to pipeline
 
