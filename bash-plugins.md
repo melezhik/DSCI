@@ -1,4 +1,4 @@
-# Bash plugins
+# Plugin SDK
 
 DSCI has a reach mechanism allowing to write extension for pipelines, called plugins. In this short post I am going to overview the process of creation and using simple plugin written on Bash ( other supported by SDK languages are also possible )
 
