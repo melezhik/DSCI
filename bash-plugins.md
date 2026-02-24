@@ -48,6 +48,15 @@ echo "hello from foo plugin"
 
 # Plugin input parameters
 
+When defining plugin input parameters one can choose between:
+
+- Static configuration
+
+- Runtime (dynamic) configuration 
+
+
+## Static
+
 DSCI provides convenient DSL for tasks and plugins developers. This SDK allow effectively handle input parameter.
 
 Let's say we have an input parameter named `message`, first of all we can defined a default value for the one:
@@ -83,6 +92,33 @@ jobs:
     params:
       message: "Hi!"
 ```
+
+## Dynamic
+
+To set plugin parameters dynamically in runtime we can place DSCI task under plugin root directory.
+
+Plugin root directory is set the way as for any other job, using `path:` parameter
+
+jobs.yaml
+
+```
+jobs:
+  -
+    id: FooJob
+    plugin: foo
+    path: plugin/foo
+
+```
+
+Now consider we have plugin/foo/task.py:
+
+```python
+#!/bin/python
+
+update_state({ "message" : "hello from Python" })
+```
+
+We effectively set input parameter for our foo plugin.
 
 # Passing results back to pipeline
 
