@@ -107,6 +107,9 @@ func thing(c *echo.Context) error {
           <a class="navbar-item" href="/doc/task">
             Tasks
           </a>
+          <a class="navbar-item" href="/doc/bash-plugins">
+            Plugins
+          </a>
           <a class="navbar-item" href="/doc/forgejo-setup">
             Forgejo
           </a>
