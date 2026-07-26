@@ -6,13 +6,24 @@ Self hosted installation guide
 
 On machine (VM) running DSCI following dependencies should be installed:
 
-- docker
+- docker/podman
 - sshd
 - forgejo
 
 ### Install forgejo
 
 Follow forgejo documentation
+
+### Configure docker/podman
+
+
+For podman:
+
+- make sure you've logged into public docker registry
+
+```bash
+podman login  -u user 
+```
 
 ### Install dsci runner
 
