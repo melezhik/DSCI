@@ -9,7 +9,7 @@ podman logs -f dsci-dispatch
 This command shows how many jobs are queue:
 
 ```bash
-podman exec -it dsci-dispatch bash -c "ls -l ~/.sparky/projects/dsci/.triggers/"
+ls -l ~/.dsci/.sparky/projects/dsci/.triggers/
 ```
 
 # Job agent
