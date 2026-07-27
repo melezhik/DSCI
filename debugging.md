@@ -4,10 +4,16 @@
 podman logs -f dsci-dispatch
 ```
 
-# Jobs queues 
+# Jobs queue
 
 This command shows how many jobs are queue:
 
 ```bash
 podman exec -it dsci-dispatch bash -c "ls -l ~/.sparky/projects/dsci/.triggers/"
+```
+
+# Running jobs
+
+```bash
+podman exec -it dsci-dispatch bash -c "podman ps"
 ```
