@@ -1,7 +1,8 @@
-# Dsci job dispatcher logs
+# Dsci dispatcher container
 
 ```bash
-podman logs -f dsci-dispatch
+podman exec -it dsci-dispatch bash
+ps aux
 ```
 
 # Jobs queue
