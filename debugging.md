@@ -12,7 +12,9 @@ This command shows how many jobs are queue:
 podman exec -it dsci-dispatch bash -c "ls -l ~/.sparky/projects/dsci/.triggers/"
 ```
 
-# Running jobs
+# Job agent
+
+This commands shows container executing dsci jobs
 
 ```bash
 podman exec -it dsci-dispatch bash -c "podman ps"
