@@ -107,7 +107,7 @@ set -e
 cd ../
 ls -l
 zef install . --deps-only
-if test "$skip_coverage" = "Yes"; then
+if test "$skip_coverage" = "True"; then
   zef test .
 else 
  raku -I. xt/coverage.rakutest
