@@ -69,7 +69,7 @@ raku -I. xt/coverage.rakutest
 echo "done"
 ```
 
-When I run the pipeline against my dummy rakudist-teddy-bear module, I get this expected [results](http://dsci-runner.sparrowhub.io/report/ui/job.run/boiqvgzxfjhwnedluapm.3403):
+When I run the pipeline against my dummy rakudist-teddy-bear module, I get these expected [results](http://dsci-runner.sparrowhub.io/report/ui/job.run/boiqvgzxfjhwnedluapm.3403):
 
 
 ```console
