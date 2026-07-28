@@ -91,11 +91,11 @@ Sometimes module author might want to disable running test coverage on their cod
 `.dsci/job.raku`:
 
 ```perl
-unless %*ENV<DSCI_MESSAGE> ~~ /no_coverage/ {
+unless config()<DSCI_MESSAGE> ~~ /no_coverage/ {
   run_task "deps";
 }
 run_task "ci", %(
-  skip_coverage => %*ENV<DSCI_MESSAGE> ~~ /no_coverage/
+  skip_coverage => config()<DSCI_MESSAGE> ~~ /no_coverage/
 );
 ``` 
 
