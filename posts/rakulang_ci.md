@@ -96,7 +96,7 @@ unless  $msg ~~ /no_coverage/ {
   run_task "deps";
 }
 run_task "ci", %(
-  skip_coverage => $msg ~~ /no_coverage/
+  skip_coverage => ( $msg ~~ /no_coverage/ ?? True !! False )
 );
 ``` 
 
