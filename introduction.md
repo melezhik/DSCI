@@ -1,10 +1,8 @@
-# DSCI Framework introduction
+# Dead Simple CI Introduction 
 
----
+[Dsci](https://github.com/melezhik/DSCI) is a brand new kid on the cicd area. It allows use of general programming languages to create ci scenarios.
 
-[Dsci](http://deadsimpleci.sparrowhub.io/doc/README) is a brand new kid on the cicd area. It allows use of general programming languages to create ci scenarios.
-
----
+——-
 
 Consider some imaginary case of building and deploying an application as docker container. So, logically we have two main stages:
 
@@ -14,7 +12,7 @@ Consider some imaginary case of building and deploying an application as docker 
 
 Let’s see how dsci could tackle such a scenario …
 
----
+——-
 
 # Pipeline file
 
@@ -56,7 +54,7 @@ jobs:
      only: .<ref> eq "refs/heads/main"
 ```
 
-Read more on job conditions on dsci documentation [~job-conditions](/job-cond.md)
+Read more on job conditions on dsci documentation - https://github.com/melezhik/DSCI/blob/main/job-cond.md
 
 # Passing parameters to job
 
@@ -118,9 +116,9 @@ The neat thing about this DSL, dsci provides the same SDK for all supported prog
 
 Read more about jobs and tasks on dsci documentation web site:
 
-- [~tasks](/task.md)
+- https://github.com/melezhik/DSCI/blob/main/task.md
 
-- [~jobs](/job.md)
+- https://github.com/melezhik/DSCI/blob/main/job.md
 
 # Passing results between jobs
 
@@ -187,6 +185,7 @@ And unlike other task and jobs parameters they never saved in job reports or cac
 
 —-
 
+
 # Deployment on localhost 
 
 By default dsci pipelines run inside some docker container, this fits situation when one needs run purely ci code - for example build and run some unit tests. CD part comes to play when build artifacts are ready for deploy. 
@@ -208,7 +207,7 @@ jobs:
 ```
 In that case deployment occurs on VM running dsci orchestrator and which allows to restart docker container with new image version right on VM
 
----
+——-
 
 That is it. 
 
@@ -216,6 +215,12 @@ This simple but real life example shows how easy and one can write cicd pipeline
 
 Hopefully you like it. 
 
----
+—-
 
-For comprehensive documentation and more information please visit dsci web site - [http://deadsimpleci.sparrowhub.io](http://deadsimpleci.sparrowhub.io)
+For comprehensive documentation and more information please visit dsci web site - https://github.com/melezhik/DSCI
+
+
+
+
+
+
