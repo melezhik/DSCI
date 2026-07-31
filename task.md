@@ -35,10 +35,27 @@ Tasks are called from [~job file](/job.md) using `run_task()` function, it takes
 
 ```python
 #!/bin/python3
-run_task("task_one"); # will run task inside tasks/task_one/ folder
-run_task("task_two"); # will run task inside tasks/task_two/ folder
+run_task("task_one"); # will run task from tasks/task_one/ folder
+run_task("task_two"); # will run task from tasks/task_two/ folder
 ```
 ---
+
+## Shared tasks
+
+Sometimes it's sensible to share tasks across many jobs, to do so just create task inside `.dsci/shareds/tasks` folder, for example:
+
+
+`dsci/shareds/tasks/build/task.bash` could be used as is a regular job task from job file using `run_task` method:
+
+
+```python
+#!/bin/python3
+run_task("build"); #  # will run task from dsci/shareds/tasks/build/ folder
+run_task("task_one"); # will run task from tasks/task_one/ folder
+run_task("task_two"); # will run task from tasks/task_two/ folder
+```
+
+If the same task exists within ~/.dsci/shared/tasks and tasks/, local job task will override shared task
 
 ## Single task job
 
