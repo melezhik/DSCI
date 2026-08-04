@@ -27,7 +27,7 @@ func main() {
 	e.Static("/css", "css")
 
 	// Start server
-	if err := e.Start("0.0.0.0:9292"); err != nil {
+	if err := e.Start("0.0.0.0:9293"); err != nil {
 		slog.Error("failed to start server", "error", err)
 	}
 }
