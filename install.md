@@ -33,7 +33,7 @@ loginctl enable-linger $USER
 
 - Set DsciContainerRuntime to podman in `~/.dsci.toml` file
 
-see [configuration](configuration.md)
+see [configuration](/configuration.md)
 
 ### Install dsci runner
 

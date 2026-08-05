@@ -95,6 +95,12 @@ func thing(c *echo.Context) error {
           <a class="navbar-item" href="/">
             Home
           </a>
+          <a class="navbar-item" href="/doc/install">
+            Installation
+          </a>
+          <a class="navbar-item" href="/doc/configuration">
+            Configuration
+          </a>
           <a class="navbar-item" href="/doc/cicd">
             CICD
           </a>
