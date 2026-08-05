@@ -2,6 +2,16 @@
 
 Dsci configuration settings are defined at `~/.dsci.toml` in TOML format
 
+## DsciContainerRuntime
+
+Container runtime, should be one of these: `docker|podman`, docker is used if not set
+
+Example:
+
+```toml
+DsciContainerRuntime: "podman"
+```
+
 ## DsciFeedbackUrl
 
 Feedback URL. Default value is `http://127.0.0.1:8080`
@@ -18,7 +28,7 @@ Skip DSCI agent bootstrap
 
 Example:
 
-```bash
+```toml
 DsciAgentSkipBootstrap: true
 ```
 
@@ -28,7 +38,7 @@ DSCI agent image. Default values is `alpine:latest`
 
 Example:
 
-```bash
+```toml
 DsciAgentImage: "dsci-agent-ubuntu:latest"
 ```
 
