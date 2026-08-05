@@ -25,6 +25,16 @@ For podman:
 podman login  -u user 
 ```
 
+- make sure podman containers persist even when user sessions are gone
+
+```
+loginctl enable-linger $USER
+```
+
+- Set DsciContainerRuntime to podman in `~/.dsci.toml` file
+
+see [configuration](configuration.md)
+
 ### Install dsci runner
 
 Right now dsci runner needs to be  built from source code, ready to use binaries
