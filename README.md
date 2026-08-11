@@ -4,7 +4,7 @@
 
 # TL;DR
 
-The idea is that - Forgejo +YAMLess pipelines for CICD, plus the same runner to install all necessary infra on single server. And devs are in control through Bash/Python not YAML )), no magic devops required
+The idea is that - Git server + YAMLess pipelines for CICD, plus the same runner to install all necessary infra on single server. And devs are in control through Bash/Python not YAML )), no magic devops required
 
 # Join us
 
@@ -16,7 +16,7 @@ We are on discord, [~join](https://discord.gg/KSMRTZ9F) us!
 
 * Everything is a code, everything through code - you are in control
 
-* No clunky YAML/Terraform/Ansible - just old good Python/Bash scripts
+* No clunky YAML/Terraform/Ansible - just old good Python/Bash/Raku scripts
 
 * No magic devops knowledge required, any developer knowing Bash/Python could spin up infrastructure in seconds
 
@@ -27,11 +27,11 @@ We are on discord, [~join](https://discord.gg/KSMRTZ9F) us!
 * Ideal for businesses and teams with limited budget
 
 
-# DSCI building blocks
+# DSCI components
 
-* [~Forgejo](/forgejo-setup.md) - smart and modern CI server
+* Dead simple Git server (with minimal yet essential features)
 
-* Dead simple [~ci](/cicd.md) - YAMLess pipeline engine for forgejo
+* Dead simple [~ci](/cicd.md) - YAMLess pipeline engine
 
 * Dead simple plugins - we have a tons of plugins available from [~https://sparrowhub.io](https://sparrowhub.io/search?q=all)
 

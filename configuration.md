@@ -12,16 +12,6 @@ Example:
 DsciContainerRuntime = "podman"
 ```
 
-## DsciFeedbackUrl
-
-Feedback URL. Default value is `http://127.0.0.1:8080`
-
-Example:
-
-```toml
-DsciFeedbackUrl = "http://dsci-runner.sparrowhub.io"
-```
-
 ## DsciAgentSkipBootstrap
 
 Skip DSCI agent bootstrap

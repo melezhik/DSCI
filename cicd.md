@@ -8,8 +8,6 @@ Yamless pipeline engine
 
 * no painful YAML pipelines, use general purpose programming languages for your pipelines instead
 
-* fully integrated with big guns like [~Forgejo](/forgejo-setup.md)/Codeberg/Gitea/Gitlab/Github
-
 * repeatable steps are written as [~plugins](/bash-plugins.md) on general purpose programming languages 
 and used as is
 
@@ -174,15 +172,6 @@ Choose the one you like and use it for pipeline. No extra code is required!
 
 TBD - pipeline examples
 
-# Forgejo integration
-
-Use DSCI instead of YAML pipeline within your forgejo instance. Pipeline reports
-are available directly via forgejo. See [~instruction](/forgejo-setup.md)
-
-# Codeberg/Gitea/Gitlab/Github integration
-
-TBD - installation/configuration howto
-
 # Using job plugins
 
 There are a plenty of job [~plugins](/bash-plugins.md) for common tasks:
@@ -259,4 +248,4 @@ Jobs are executed on isolated environments, while [~tasks](/task.md) within a ce
 
 - [~Pipelines](/pipeline.md)
 
-- [~Examples](https://forgejo.sparrowhub.io/demo)
+- [~Demo Server](https://dsci.sparrowhub.io)

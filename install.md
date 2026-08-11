@@ -8,14 +8,13 @@ On machine (VM) running DSCI following dependencies should be installed:
 
 - docker/podman
 - sshd
-- forgejo
 
-### Install forgejo
-
-Follow forgejo documentation
 
 ### Configure docker/podman
 
+For docker:
+
+No specific setup
 
 For podman:
 
@@ -35,27 +34,51 @@ loginctl enable-linger $USER
 
 see [configuration](/configuration.md)
 
-### Install dsci runner
-
-Right now dsci runner needs to be  built from source code, ready to use binaries
-for various architectures coming soon:
+### Install dsci server
 
 ```bash
 git clone https://github.com/melezhik/dsci-runner.git
 cd dsci-runner
 go mod tidy
-go build -o dsci_runner main.go
+go build
+./dsci-runner
 ```
 
-### Configure forgejo and dsci runner
+Go to http://127.0.0.1:8080
 
-Follow ~[this documentation](/forgejo-setup.md)
+### Create git repository
+
+Right now, this is done via terminal, in the future this will be available via UI
+
+To clone existing repository:
+
+```bash
+cd dsci-runner/.repositories
+git clone --bare https://github.com/foo/demo.git
+```
+
+To create empty repository
+
+```bash
+cd dsci-runner/.repositories
+git init --bare demo.git
+```
+
+Now you can close your repositories and work with them:
+
+```
+git clone http://127.0.0.1:8080/demo.git
+cd demo
+touch file.txt
+git add file.txt && git commit -a -m "add file"
+git push
+```
 
 ### Create first pipeline
 
-* Create repo, setup web hook
-
 * Create pipeline code
+
+In git repo, create `.dsci` folder with pipeline:
 
 `.dsci/jobs.yaml`
 
@@ -119,5 +142,4 @@ jobs:
 
 # Further setup
 
-Normally everything is done via dsci [pipelines](/pipeline.md) which in nutshell are just Bash or Python scripts,
-so developers just need to write them using guidelines or use some existing dsci [~plugins](/bash-plugins.md) to get the job done
+Normally everything is done via dsci [pipelines](/pipeline.md) which in nutshell are just Bash or Python scripts, so developers just need to write them using guidelines or use some existing dsci [~plugins](/bash-plugins.md) to get the job done

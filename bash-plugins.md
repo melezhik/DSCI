@@ -12,7 +12,7 @@ The should be named sparrow.json, as underlying DSCI uses Sparrow framework to r
   "name" : "foo",
   "description" : "Simple foo plugin",
   "version" : "0.0.1",
-  "url" : "https://forgejo.sparrowhub.io/root/sparrow-plugins",
+  "url" : "https://your.git.repo",
   "category" : "demo, utils"
 }
 ```
