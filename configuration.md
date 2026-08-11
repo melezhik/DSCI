@@ -32,3 +32,10 @@ Example:
 DsciAgentImage = "dsci-agent-ubuntu:latest"
 ```
 
+## GitPathToHttpBackend
+
+Path to git-http-backend binary. Optional. Default value is `/usr/lib/git-core/git-http-backend`
+
+```toml
+GitPathToHttpBackend = "/Users/alex/homebrew/Cellar/git/2.33.0/libexec/git-core/git-http-backend"
+```
