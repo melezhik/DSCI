@@ -39,10 +39,6 @@ git commit message
 
 git full repository name
 
-## DSCI_FORGEJO_HOST
-
-Forgejo host with schema and http port
-
 ## DSCI_JOB_ID
 
 dsci job internal id
