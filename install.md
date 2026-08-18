@@ -38,6 +38,12 @@ see [configuration](/configuration.md)
 
 see [configuration](/configuration.md)
 
+###  Set path to git-http-backend
+
+- Set GitPathToHttpBackend in `~/.dsci.toml` file
+
+see [configuration](/configuration.md)
+
 ### Install dsci server
 
 ```bash

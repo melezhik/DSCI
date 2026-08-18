@@ -68,6 +68,8 @@ GitServerAddress = "http://dsci.sparrowhub.io"
 
 Path to git-http-backend binary. Optional. Default value is `/usr/lib/git-core/git-http-backend`
 
+Example:
+
 ```toml
 GitPathToHttpBackend = "/Users/alex/homebrew/Cellar/git/2.33.0/libexec/git-core/git-http-backend"
 ```
