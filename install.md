@@ -30,7 +30,11 @@ podman login  -u user
 loginctl enable-linger $USER
 ```
 
-- Set DsciContainerRuntime to podman in `~/.dsci.toml` file
+- Set DsciContainerRuntime in `~/.dsci.toml` file
+
+see [configuration](/configuration.md)
+
+- Set GitAuthUser/GitAuthPassword in `~/.dsci.toml` file
 
 see [configuration](/configuration.md)
 

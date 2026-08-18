@@ -32,6 +32,38 @@ Example:
 DsciAgentImage = "dsci-agent-ubuntu:latest"
 ```
 
+# Git related options
+
+## GitAuthUser
+
+Sets http basic authentication user which is used for git push. Optional. Default value is `dsci`
+
+Example:
+
+```toml
+GitAuthUser = "admin"
+```
+
+## GitAuthPassword
+
+Sets http basic authentication password which is used for git push. Optional. Default value is `dsci`
+
+Example:
+
+```toml
+GitAuthPassword = "seCret1001"
+```
+
+## GitServerAddress
+
+Sets git server address as it appears for public users using clone. Optional. Default value is `http://127.0.0.1:8080`
+
+Example:
+
+```toml
+GitServerAddress = "http://dsci.sparrowhub.io"
+```
+
 ## GitPathToHttpBackend
 
 Path to git-http-backend binary. Optional. Default value is `/usr/lib/git-core/git-http-backend`
