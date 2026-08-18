@@ -122,8 +122,8 @@ func thing(c *echo.Context) error {
           <a class="navbar-item" href="/doc/discord">
             Discord
           </a>
-          <a class="navbar-item" href="/doc/sandbox">
-            Sandbox
+          <a class="navbar-item" href="/doc/demo">
+            Demo
           </a>
          <a class="navbar-item" href="https://github.com/melezhik/DSCI">
             GitHub
