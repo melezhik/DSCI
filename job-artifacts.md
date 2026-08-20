@@ -24,7 +24,7 @@ from pathlib import Path
 
 file_path = Path.home() / "artifacts/message.txt"
 
-# 2. Read the file safely using a context manager
+# Read the file created by previous job(s)
 try:
     with open(file_path, "r", encoding="utf-8") as file:
         content = file.read()
