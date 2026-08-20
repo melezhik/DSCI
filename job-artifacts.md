@@ -20,6 +20,8 @@ The the next job will see it in the same directory:
 ```python
 #!/usr/bin/python3
 
+from pathlib import Path
+
 file_path = Path.home() / "artifacts.txt"
 
 # 2. Read the file safely using a context manager
