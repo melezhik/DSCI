@@ -33,7 +33,7 @@ see this new version
 
 # Create plugin task file
 
-Normally it's the same DSCI job file one might be already familiar with by reading [~tasks](/task.md) documentation.
+Normally it's the same DSCI job file one might be already familiar with by reading [tasks](/task.md) documentation.
 
 So the same logic applies here.
 

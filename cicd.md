@@ -8,7 +8,7 @@ Yamless pipeline engine
 
 * no painful YAML pipelines, use general purpose programming languages for your pipelines instead
 
-* repeatable steps are written as [~plugins](/bash-plugins.md) on general purpose programming languages 
+* repeatable steps are written as [plugins](/bash-plugins.md) on general purpose programming languages 
 and used as is
 
 * for developers - pipelines get run as normal scripts
@@ -174,7 +174,7 @@ TBD - pipeline examples
 
 # Using job plugins
 
-There are a plenty of job [~plugins](/bash-plugins.md) for common tasks:
+There are a plenty of job [plugins](/bash-plugins.md) for common tasks:
 
 - installing database, services, etc
 
@@ -197,7 +197,7 @@ jobs:
   - 
 ```
 
-Job [~plugins](/bash-plugins.md) act as native jobs, for example can use get\_state/update\_state function.
+Job [plugins](/bash-plugins.md) act as native jobs, for example can use get\_state/update\_state function.
 
 # Containers support
 
@@ -227,25 +227,25 @@ docker run --env SP6_TASK_CONFIG_FROM=.config.json -it --entrypoint /bin/bash -v
 
 # Pipelines vs Jobs vs Tasks vs Plugins
 
-- [~Pipeline](/pipeline.md) is a list of jobs executed sequentially
+- [Pipeline](/pipeline.md) is a list of jobs executed sequentially
 
-- [~Job](/job.md) is a list of tasks executed sequentially
+- [Job](/job.md) is a list of tasks executed sequentially
 
 - Isolation:
 
-Jobs are executed on isolated environments, while [~tasks](/task.md) within a certain job are executed in the same enviorment
+Jobs are executed on isolated environments, while [tasks](/task.md) within a certain job are executed in the same enviorment
 
 - Environments are represented by ephemeral containers
 
 - Jobs/tasks can share/pass states
 
-- [~Plugins](/bash-plugins.md) are the same as jobs, but reusable jobs published to https://sparrowhub.io
+- [Plugins](/bash-plugins.md) are the same as jobs, but reusable jobs published to https://sparrowhub.io
 
 
 # Further reading
 
-- [~Jobs](/job.md)
+- [Jobs](/job.md)
 
-- [~Pipelines](/pipeline.md)
+- [Pipelines](/pipeline.md)
 
-- [~Demo Server](https://dsci.sparrowhub.io)
+- [Demo Server](https://dsci.sparrowhub.io)

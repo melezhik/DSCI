@@ -8,7 +8,7 @@ The idea is that - Git server + YAMLess pipelines for CICD, plus the same runner
 
 # Join us
 
-We are on discord, [~join](https://discord.gg/KSMRTZ9F) us!
+We are on discord, [join](https://discord.gg/KSMRTZ9F) us!
 
 # Features
 
@@ -31,17 +31,17 @@ We are on discord, [~join](https://discord.gg/KSMRTZ9F) us!
 
 * Dead simple Git server (with minimal yet essential features)
 
-* Dead simple [~ci](/cicd.md) - YAMLess pipeline engine
+* Dead simple [ci](/cicd.md) - YAMLess pipeline engine
 
-* Dead simple plugins - we have a tons of plugins available from [~https://sparrowhub.io](https://sparrowhub.io/search?q=all)
+* Dead simple plugins - we have a tons of plugins available from [https://sparrowhub.io](https://sparrowhub.io/search?q=all)
 
 
 ---
 
 # Further reading
 
-* [~Installation guide](/install.md)
+* [Installation guide](/install.md)
 
-* [~Dead simple ci](/cicd.md) 
+* [Dead simple ci](/cicd.md) 
 
-* [~DSCI introduction](/introduction.md)
+* [DSCI introduction](/introduction.md)

@@ -31,7 +31,7 @@ Following is a list of tasks file names for different languages:
 +------------+--------------+
 ```
 
-Tasks are called from [~job file](/job.md) using `run_task()` function, it takes the first input parameter as a path to sub directory within `tasks/` directory:
+Tasks are called from [job file](/job.md) using `run_task()` function, it takes the first input parameter as a path to sub directory within `tasks/` directory:
 
 ```python
 #!/bin/python3
@@ -249,8 +249,8 @@ Notice that key path is built from job ID, which is `job1`, it should also start
 
 # Further reading 
 
-* [~Pipelines](/pipeline.md)
+* [Pipelines](/pipeline.md)
 
-* [~Jobs](/job.md)
+* [Jobs](/job.md)
 
-* [~Predefined pipeline variables](/predefined-vars.md)
+* [Predefined pipeline variables](/predefined-vars.md)

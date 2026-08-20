@@ -124,7 +124,7 @@ jobs:
     skip: m:i/skip_ci/ 
 ```
 
-Follow [~Raku regexs](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://docs.raku.org/language/regexes) for details
+Follow [Raku regexs](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://docs.raku.org/language/regexes) for details
 
 ## Global jobs conditions
 
