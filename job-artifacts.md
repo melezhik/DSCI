@@ -11,7 +11,7 @@ directory in some task file, for example:
 ```bash
 #!/bin/bash
 
-echo "DSCI is cool" > ~/artifacts.txt
+echo "DSCI is cool" > ~/artifacts/message.txt
 ```
 
 The the next job will see it in the same directory:
@@ -22,7 +22,7 @@ The the next job will see it in the same directory:
 
 from pathlib import Path
 
-file_path = Path.home() / "artifacts.txt"
+file_path = Path.home() / "artifacts/message.txt"
 
 # 2. Read the file safely using a context manager
 try:
