@@ -1,8 +1,15 @@
 # Dsci dispatcher container
 
+Docker
+
+```bash
+docker exec -it dsci-dispatch bash
+```
+
+Podman
+
 ```bash
 podman exec -it dsci-dispatch bash
-ps aux
 ```
 
 # Jobs queue
@@ -15,8 +22,27 @@ ls -l ~/.dsci/.sparky/projects/dsci/.triggers/
 
 # Job agent
 
-This commands shows container executing dsci jobs
+Docker
+
+``bash
+docker exec -it dsci-agent bash
+```
+
+Podman
 
 ```bash
-podman exec -it dsci-dispatch bash -c "podman ps"
+podman exec -it dsci-dispatch
+docker exec -it dsci-agent bash
 ```
+
+
+# TCP ports
+
+Following ports should be open:
+
+* `8080`
+* `8181`
+
+
+
+
