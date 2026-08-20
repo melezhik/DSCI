@@ -12,7 +12,6 @@ directory in some task file, for example:
 #!/bin/bash
 
 echo "DSCI is cool" > ~/artifacts.txt
-
 ```
 
 The the next job will see it in the same directory:
@@ -20,7 +19,6 @@ The the next job will see it in the same directory:
 
 ```python
 #!/usr/bin/python3
-
 
 file_path = Path.home() / "artifacts.txt"
 
@@ -32,7 +30,6 @@ try:
 except FileNotFoundError:
     print(f"Error: The file at {file_path} was not found.")
 ```
-
 
 ---
 
