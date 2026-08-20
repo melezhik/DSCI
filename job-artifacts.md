@@ -35,9 +35,9 @@ except FileNotFoundError:
 
 That's it. Artifacts de-facto is any file located in `~/artifacts` dir,
 
-if some job remove a file from `~/artifacts/` it won't be available for the next
+If some job decides to remove a file from `~/artifacts/` it won't be available for the next
 jobs.
 
-So artifacts works as a pipeline data hub
+So artifacts works as a pipeline data buffer
 
 
