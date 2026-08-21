@@ -4,7 +4,10 @@
 
 # TL;DR
 
-The idea is that - Git server + YAMLess pipelines for CICD, plus the same runner to install all necessary infra on single server. And devs are in control through Bash/Python not YAML )), no magic devops required
+The idea is that - Git server + 99%<sup>*</sup> less YAML pipelines for CICD, plus the same runner to install all necessary infra on single server. And devs are in control through Bash/Python not YAML )), no magic devops required
+
+
+\* Yep - only tiny, simply structured YAML on the top (only to list jobs technically) everything else is general purpose programming languages
 
 # Join us
 

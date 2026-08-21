@@ -1,6 +1,8 @@
 # CICD
 
-Yamless pipeline engine
+99%<sup>*</sup> less YAML pipeline engine
+
+\* Yep - only tiny, simply structured YAML on the top (only to list jobs technically) everything else is general purpose programming languages
 
 # Features
 
@@ -8,8 +10,7 @@ Yamless pipeline engine
 
 * no painful YAML pipelines, use general purpose programming languages for your pipelines instead
 
-* repeatable steps are written as [plugins](/bash-plugins.md) on general purpose programming languages 
-and used as is
+* repeatable steps are written as [plugins](/bash-plugins.md) on general purpose programming languages and used as is
 
 * for developers - pipelines get run as normal scripts
 
