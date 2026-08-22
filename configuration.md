@@ -29,7 +29,7 @@ DSCI agent image. Default values is `alpine:latest`
 Example:
 
 ```toml
-DsciAgentImage = "dsci-agent-ubuntu:latest"
+DsciAgentImage = "docker.io/melezhik/dsci-agent-alpine:latest"
 ```
 
 # Git related options
