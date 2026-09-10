@@ -7,8 +7,7 @@ Self hosted installation guide
 On machine (VM) running DSCI following dependencies should be installed:
 
 - docker/podman
-- sshd
-
+- rakupp
 
 ### Configure docker/podman
 
@@ -42,8 +41,6 @@ see [configuration](/configuration.md)
 
 - Set GitPathToHttpBackend in `~/.dsci.toml` file
 
-see [configuration](/configuration.md)
-
 ### Install dsci server
 
 ```bash
@@ -56,25 +53,55 @@ go build
 
 Go to http://127.0.0.1:8080
 
+### Install dsci job runner
+
+I promise next one this one will simpler, but
+this is not that hard though )
+
+```
+mkdir ~/.rakupp
+cd ~/.rakupp
+wget https://github.com/ash/rakupp/releases/download/v3.26.0/rakupp-linux-x86_64.tar.gz
+tar -xzf rakupp-linux-x86_64.tar.gz
+export PATH=~/.rakupo/rakupp/bin/:~/.raku/bin:$PATH
+git clone https://github.com/melezhik/Sparrow6.git
+cd Sparrow6
+rakupp install --no-test .
+cd ../
+git clone https://github.com/melezhik/sparrowdo.git
+cd sparrowdo
+rakupp install --no-test .
+cd ../
+git clone https://github.com/melezhik/sparky-minimal.git
+cd https://github.com/melezhik/sparky-minimal.git
+rakupp install --no-test .
+export SP6_RAKU_COMP=rakupp
+echo 'export PATH=~/.rakupp/rakupp/bin/:~/.raku/bin:$PATH' >> ~/.bashrc
+echo 'export SP6_RAKU_COMP=rakupp' >> ~/.bashrc
+echo 'export PATH=~/.rakupp/rakupp/bin/:~/.raku/bin:$PATH' >> ~/.bash_profile 
+echo 'export SP6_RAKU_COMP=rakupp' >> ~/.bash_profile
+```
+
+Patch `~/.dsci.toml` file:
+
+```toml
+DsciAgentImage = "melezhik/dsci-agent-rakupp"
+DsciAgentSkipBootstrap = true
+```
+
+Run job runner
+
+```
+sparkyd
+```
+
 ### Create git repository
 
-Right now, this is done via terminal, in the future this will be available via UI
+web ui -> new repo 
 
-To clone existing repository:
+`demo.git`
 
-```bash
-cd dsci-runner/.repositories
-git clone --bare https://github.com/foo/demo.git
-```
-
-To create empty repository
-
-```bash
-cd dsci-runner/.repositories
-git init --bare demo.git
-```
-
-Now you can close your repositories and work with them:
+### Use git repository
 
 ```
 git clone http://127.0.0.1:8080/demo.git
