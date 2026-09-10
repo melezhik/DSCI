@@ -55,8 +55,8 @@ Go to http://127.0.0.1:8080
 
 ### Install dsci job runner
 
-I promise next one this one will simpler, but
-this is not that hard though )
+> I promise next time this one will be simpler, but
+> this one is not that hard though )
 
 ```
 mkdir ~/.rakupp
@@ -147,8 +147,6 @@ Requirements:
 One needs to ensure following for server running dsci runner:
 
 * enable passwordless sudo for user running dsci runner
-
-* open 22 port on 127.0.0.1
 
 * add git repository with infrastructure pipeline to the white list
 
