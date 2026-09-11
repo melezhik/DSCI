@@ -6,6 +6,7 @@ Self hosted installation guide
 
 On machine (VM) running DSCI following dependencies should be installed:
 
+- git
 - docker/podman
 - rakupp
 
