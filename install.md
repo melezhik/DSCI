@@ -29,17 +29,47 @@ podman login  -u user
 loginctl enable-linger $USER
 ```
 
-- Set DsciContainerRuntime in `~/.dsci.toml` file
+### Create `~/.dsci.toml`
 
-see [configuration](/configuration.md)
+Required parameters to set:
 
-- Set GitAuthUser/GitAuthPassword in `~/.dsci.toml` file
+- DsciContainerRuntime
 
-see [configuration](/configuration.md)
+This sets container runtime - `docker` or `podman`
 
-###  Set path to git-http-backend
+- GitAuthUser/GitAuthPassword
 
-- Set GitPathToHttpBackend in `~/.dsci.toml` file
+This sets login and password for git http basic authentication
+
+- GitPathToHttpBackend
+
+This sets path to your git http backend cli
+
+- DsciAgentImage
+
+This has to be set to `melezhik/dsci-agent-rakupp`
+
+More images are comming soon
+
+- DsciAgentSkipBootstrap
+
+This has to be set to true
+
+---
+
+Final configuration file will be something like that:
+
+```toml
+DsciAgentImage = "melezhik/dsci-agent-rakupp"
+DsciContainerRuntime = "podman"
+GitServerAddress = "https://your.server.co"
+GitAuthUser = "admin"
+GitAuthPassword = "superSecret"
+DsciAgentSkipBootstrap = true
+```
+
+For options explanation see [configuration](/configuration.md) doc
+
 
 ### Install dsci server
 
@@ -55,9 +85,6 @@ Go to http://127.0.0.1:8080
 
 ### Install dsci job runner
 
-> I promise next time this one will be simpler, but
-> this one is not that hard though )
-
 ```bash
 mkdir -p ~/.rakupp
 cd ~/.rakupp
@@ -70,13 +97,6 @@ echo 'export PATH=~/.rakupp/rakupp/bin/:~/.raku/bin:$PATH' >> ~/.bashrc
 echo 'export SP6_RAKU_COMP=rakupp' >> ~/.bashrc
 echo 'export PATH=~/.rakupp/rakupp/bin/:~/.raku/bin:$PATH' >> ~/.bash_profile 
 echo 'export SP6_RAKU_COMP=rakupp' >> ~/.bash_profile
-```
-
-Patch `~/.dsci.toml` file:
-
-```toml
-DsciAgentImage = "melezhik/dsci-agent-rakupp"
-DsciAgentSkipBootstrap = true
 ```
 
 Run job runner
