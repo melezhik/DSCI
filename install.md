@@ -49,7 +49,7 @@ This sets path to your git http backend cli
 
 This has to be set to `melezhik/dsci-agent-rakupp`.
 
-This is recommended image to use it has the fastest dsci runtime (rakupp)
+This is recommended image to use as it has the fastest dsci runtime (rakupp)
 
 - DsciAgentSkipBootstrap
 
