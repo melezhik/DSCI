@@ -62,14 +62,13 @@ Final configuration file will be something like that:
 ```toml
 DsciAgentImage = "melezhik/dsci-agent-rakupp"
 DsciContainerRuntime = "podman"
-GitServerAddress = "https://your.server.co"
+GitServerAddress = "http://127.0.0.1"
 GitAuthUser = "admin"
 GitAuthPassword = "superSecret"
 DsciAgentSkipBootstrap = true
 ```
 
 For options explanation see [configuration](/configuration.md) doc
-
 
 ### Install dsci server
 
