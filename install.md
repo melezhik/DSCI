@@ -60,6 +60,7 @@ This has to be set to true
 Final configuration file will be something like that:
 
 ```toml
+GitPathToHttpBackend = "/usr/lib/git-core/git-http-backend"
 DsciAgentImage = "melezhik/dsci-agent-rakupp"
 DsciContainerRuntime = "podman"
 GitServerAddress = "http://127.0.0.1"
