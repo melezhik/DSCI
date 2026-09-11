@@ -58,24 +58,14 @@ Go to http://127.0.0.1:8080
 > I promise next time this one will be simpler, but
 > this one is not that hard though )
 
-```
-mkdir ~/.rakupp
+```bash
+mkdir -p ~/.rakupp
 cd ~/.rakupp
 wget https://github.com/ash/rakupp/releases/download/v3.26.0/rakupp-linux-x86_64.tar.gz
 tar -xzf rakupp-linux-x86_64.tar.gz
 export PATH=~/.rakupo/rakupp/bin/:~/.raku/bin:$PATH
-git clone https://github.com/melezhik/Sparrow6.git
-cd Sparrow6
-rakupp install --no-test .
-cd ../
-git clone https://github.com/melezhik/sparrowdo.git
-cd sparrowdo
-rakupp install --no-test .
-cd ../
-git clone https://github.com/melezhik/sparky-minimal.git
-cd https://github.com/melezhik/sparky-minimal.git
-rakupp install --no-test .
 export SP6_RAKU_COMP=rakupp
+rakupp install --no-test Sparky::Minimal
 echo 'export PATH=~/.rakupp/rakupp/bin/:~/.raku/bin:$PATH' >> ~/.bashrc
 echo 'export SP6_RAKU_COMP=rakupp' >> ~/.bashrc
 echo 'export PATH=~/.rakupp/rakupp/bin/:~/.raku/bin:$PATH' >> ~/.bash_profile 
