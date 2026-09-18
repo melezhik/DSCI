@@ -22,7 +22,12 @@ devops, ai, ci, LLM
 
 Here the thing. Just ask LLM what do you need and you'll get your answer in seconds:
 
-![dsci interface](https://raw.githubusercontent.com/melezhik/DSCI/refs/heads/main/screenshots/DSCI_LLM2.png)
+```
+Create DSCI pipeline to build golang project with unit tests and go vet
+and publishing resulted container image based on Alpine to external container
+registry
+
+```
 
 If you don't believe me those are examples I've created for myself, by just playing with DSCI and LLM:
 
