@@ -133,7 +133,7 @@ func thing(c *echo.Context) error {
     </nav>
     <section class="hero">
       <div class="hero-body">
-        <p class="title">%s</p>
+        <p class="title">%s.md</p>
 		<hr>
 		<p class="content" id="data">%s</p>
       </div>
