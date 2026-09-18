@@ -1,8 +1,17 @@
----
-title: You can create any workflow or pipeline you want with DSCI and LLM
-published: true
-description: How to create any sort of pipelines using DSCI and LLM
-tags: devops, ai, ci, LLM
+# title
+
+You can create any workflow or pipeline you want with DSCI and LLM
+
+# description
+
+
+How to create any sort of pipelines using DSCI and LLM
+
+
+# tags
+
+ devops, ai, ci, LLM
+
 ---
 
 [DSCI](https://deadsimpleci.sparrowhub.io) - is a self hosted git server with embedded CI runner. The cool thing about it that advances it position among other tools:
