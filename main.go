@@ -46,9 +46,9 @@ func thing(c *echo.Context) error {
 
 	data, err := os.ReadFile(path)
 
-	re := regexp.MustCompile(`\/(\S+?)\.md`)
+	re := regexp.MustCompile(`\(\/([^/]+?)\.md`)
 
-	data = re.ReplaceAll(data, []byte("/doc/" + "$1" ))
+	data = re.ReplaceAll(data, []byte("(/doc/" + "$1" ))
 
 	re = regexp.MustCompile(`\.\<(\S+?)\>`)
 
