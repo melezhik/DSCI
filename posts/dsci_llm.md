@@ -1,16 +1,14 @@
-# title
+# Title
 
 You can create any workflow or pipeline you want with DSCI and LLM
 
-# description
-
+# Description
 
 How to create any sort of pipelines using DSCI and LLM
 
+# Tags
 
-# tags
-
- devops, ai, ci, LLM
+devops, ai, ci, LLM
 
 ---
 
@@ -30,24 +28,23 @@ If you don't believe me those are examples I've created for myself, by just play
 
 ---
 
-* Python / selenium tests ci pipeline  - http://dsci.sparrowhub.io:8080/file_view/dsci/1c9fb55.1789580532/answer.md
+* [Python / selenium tests ci pipeline](http://dsci.sparrowhub.io:8080/file_view/dsci/1c9fb55.1789580532/answer.md)
 
-* Execute chef cookbook on remote host - http://dsci.sparrowhub.io:8080/file_view/dsci/007aefe.1789618706/answer.md
+* [Execute chef cookbook on remote host](http://dsci.sparrowhub.io:8080/file_view/dsci/007aefe.1789618706/answer.md)
 
-* Execute Ansible playbook on remote host - http://dsci.sparrowhub.io:8080/file_view/dsci/007aefe.1789617896/answer.md
+* [Execute Ansible playbook on remote host](http://dsci.sparrowhub.io:8080/file_view/dsci/007aefe.1789617896/answer.md)
 
-* C++ with cmake  - http://dsci.sparrowhub.io:8080/file_view/dsci/007aefe.1789628812/answer.md
+* [C++ with cmake](http://dsci.sparrowhub.io:8080/file_view/dsci/007aefe.1789628812/answer.md)
 
-* Node.js with npm project - http://dsci.sparrowhub.io:8080/file_view/dsci/007aefe.1789654909/answer.md
+* [Node.js with npm project](http://dsci.sparrowhub.io:8080/file_view/dsci/007aefe.1789654909/answer.md)
 
-* Create DSCI pipeline to deploy AI agent on localhost , use some popular Agent framework and LLM - http://dsci.sparrowhub.io:8080/file_view/dsci/007aefe.1789718838/answer.md
+* [Create DSCI pipeline to deploy AI agent on localhost , use some popular Agent framework and LLM](http://dsci.sparrowhub.io:8080/file_view/dsci/007aefe.1789718838/answer.md)
 
-* Python+pytest+coverage  - http://dsci.sparrowhub.io:8080/file_view/dsci/1c9fb55.1789570454/answer.md
+* [Python+pytest+coverage](http://dsci.sparrowhub.io:8080/file_view/dsci/1c9fb55.1789570454/answer.md)
 
+* [Golang+unit tests+ coverage + docker image push](http://dsci.sparrowhub.io:8080/file_view/dsci/1c9fb55.1789570619/answer.md)
 
-* Golang+unit tests+ coverage + docker image push - http://dsci.sparrowhub.io:8080/file_view/dsci/1c9fb55.1789570619/answer.md
-
-* Perl/Mariadb service/Sqlite/Curl - http://dsci.sparrowhub.io:8080/file_view/dsci/1c9fb55.1789573431/answer.md
+* [Perl/Mariadb service/Sqlite/Curl](http://dsci.sparrowhub.io:8080/file_view/dsci/1c9fb55.1789573431/answer.md)
 
 Now, what amazing about all those examples:
 
@@ -61,7 +58,7 @@ Now, what amazing about all those examples:
 
 How to use it ?
 
-Use this link - http://dsci.sparrowhub.io:8080/repo/pipeline-generator.git
+Use this link - [http://dsci.sparrowhub.io:8080/repo/pipeline-generator.git](http://dsci.sparrowhub.io:8080/repo/pipeline-generator.git)
 
 To build pipeline for your requirements, just say something:
 
