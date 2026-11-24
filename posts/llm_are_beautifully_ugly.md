@@ -1,6 +1,6 @@
 # LLMs are beautifully ugly
 
-![img](https://raw.githubusercontent.com/melezhik/DSCI/refs/heads/main/screenshots/IMG_5313.png)
+![img](https://raw.githubusercontent.com/melezhik/DSCI/refs/heads/main/screenshots/IMG_5313-resized.png)
 
 Yes. They are beautiful cause they get things done in tremendous small amount of time,
 all I need is to create a proper [skill.md](http://dsci.sparrowhub.io:8080/repo/rocky-linux-sparky-test-generator.git/file/context.md) for them 
@@ -16,7 +16,9 @@ Cause one day they will be fixed and they will give me 99.99% correct result.
 As for now I'm happy cause they are 
 
 - Enable me to explore my [tools / frameworks](https://github.com/melezhik/Sparrow6), LLMs
-is extremely useful when generating code for my system and showing me what they could be
+is extremely useful when generating code for my system and showing me what they could be:
+
+[Test Caddy web server installation on Rocky Linux](http://dsci.sparrowhub.io:8080/file_view/dsci/4bb6b82.1795524893/02_answer.md) using Raku for task checks
 
 - Dramatically minimizing time that I need to show others use cases for my framework:
 
