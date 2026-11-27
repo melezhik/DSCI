@@ -89,7 +89,7 @@ Go to http://127.0.0.1:8080
 ```bash
 mkdir -p ~/.rakupp
 cd ~/.rakupp
-wget https://github.com/ash/rakupp/releases/download/v3.26.0/rakupp-linux-x86_64.tar.gz
+wget https://github.com/ash/rakupp/releases/download/v5.11.0/rakupp-linux-x86_64.tar.gz
 tar -xzf rakupp-linux-x86_64.tar.gz
 export PATH=~/.rakupo/rakupp/bin/:~/.raku/bin:$PATH
 rakupp install --no-test Sparky::Minimal
